@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+
+  p {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .positioned {
+    padding: 30px 15px;
+    background-color: yellow;
+    position: fixed;
+    top: 0%;
+    right: 50%;
+    margin-top: 20px;
+    margin-right: -200px;
+    width: 400px;
+    text-align: center;
+    z-index: 2;
+    }
+
+  .transparent {
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    position: fixed;
+    /*position: relative;*/
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+     }
+
+     .pink {
+      background-color: pink;
+      height: 20px;
+      width: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-left: -10px;
+      margin-top: -10px;
+
+     }
+  </style>
+</head>
+
+<body>
+  <div class="transparent">
+  </div>
+  <section>
+    <p> Duis mollis erat id nisl interdum, eu convallis libero tincidunt. Cras porttitor lectus sed dolor tempor, at egestas tortor feugiat. Mauris quam purus, commodo vel odio sit amet, pellentesque pretium sapien. Sed placerat sodales ornare. Suspendisse potenti. Vestibulum quis nisi at tellus blandit cursus a ut est. Duis ut mauris eget erat venenatis placerat. Cras nec eros dolor. Morbi sit amet diam sed tortor posuere volutpat. Quisque felis est, feugiat quis dignissim vel, porta nec lorem.
+    </p>
+    <p>Nulla egestas scelerisque tristique. Vivamus molestie pretium turpis, sed venenatis lacus malesuada sit amet. Nunc fermentum feugiat lacus, in varius ex eleifend eget. Morbi venenatis quis sem sit amet tristique. Proin fringilla volutpat ultricies. Pellentesque condimentum viverra eros id viverra. Ut posuere cursus placerat. Nulla urna sem, suscipit in felis ut, sodales lobortis neque. Aliquam a nisl sit amet dolor consectetur pellentesque at eu dui.
+    </p>
+    <p>Suspendisse ultricies felis justo, vitae tempor orci eleifend eu. Curabitur et lorem in elit mollis posuere id non nisi. Donec facilisis elit id sapien tristique, vel accumsan est varius. Duis id sapien sodales sem ullamcorper venenatis. Proin accumsan ut diam ut dapibus. Vestibulum non lacinia enim, nec dapibus felis. Praesent iaculis nulla sed sapien euismod euismod. Morbi ut porttitor nisl, dictum porttitor metus. Praesent interdum nisl quis mi euismod rhoncus. Morbi vitae massa hendrerit, tempus urna a, rutrum tortor. Aliquam id nulla sed ex ultricies varius ac sed nulla.
+    </p>
+  </section>
+    <div class=positioned>I'm positioned!
+          <span class="pink"></span>
+    </div>
+</body>
+
+</html>

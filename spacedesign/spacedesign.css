@@ -1,0 +1,154 @@
+@import url('reset.css');
+
+body {
+  background-image: url('images/bg_body.gif');
+  font: 400 20px "Nunito Sans", sans-serif;
+  letter-spacing: 0.7px;
+  line-height: 28px;
+  padding: 133px 0 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 123px 0;
+}
+
+header {
+  padding: 0 0 42px 30px;
+}
+
+header img {
+  margin-left: 18px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #c2c2c2;
+  font-size: 26px;
+  text-decoration: none;
+}
+
+nav li+li {
+  margin: 0 0 0 75px;
+}
+
+.current-page {
+  color: #6db9ff;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 35px;
+  padding-left: 15px;
+}
+
+h3 {
+  color: #3e59b2;
+  font-weight: 900;
+  margin-bottom: 18px;
+}
+
+main p {
+  margin: 0;
+  padding: 0 0 65px 0;
+}
+
+h2::before,
+h2::after {
+  content: "\2022";
+  font-size: 28px;
+  padding: 0 25px 0 20px;
+  text-align: center;
+  vertical-align: 5px;
+}
+
+main {
+  background-color: #ffffff;
+  color: #45494d;
+  padding: 90px 140px 0 161px;
+}
+
+footer {
+  background-color: #e7e7e7;
+  color: #b2b2b2;
+  padding: 85px 310px 75px 310px;
+}
+
+footer p {
+  margin: 0 0 30px 0;
+}
+
+footer a {
+  background: transparent url('images/icons_social-media.png') no-repeat 0 0;
+  direction: ltr;
+  display: block;
+  height: 46px;
+  overflow: hidden;
+  text-indent: -8685px;
+  width: 46px;
+}
+
+footer li+li {
+  margin: 0 0 0 125px;
+}
+
+.projects {
+  padding: 100px 65px 40px 105px;
+}
+
+.projects p {
+  padding: 0 80px 30px 80px;
+}
+
+.projects img {
+  margin-bottom: 20px;
+}
+
+main img {
+  width: 100%;
+}
+
+.twitter {
+  background-position: 0 0;
+}
+
+.facebook {
+  background-position: 0 -46px;
+}
+
+.email {
+  background-position: 0 -92px;
+}
+
+.instagram {
+  background-position: 0 -138px;
+}
+
+.portraits {
+  display: flex;
+  margin: 25px 0 0 0;
+  padding: 0 0 180px 30px;
+}
+
+figure {
+  margin: 40px 30px;
+}
+
+figcaption {
+  margin-top: 20px;
+}
+
+figure a {
+  color: #3e59b2;
+  font-size: 24px;
+  text-decoration: none;
+}

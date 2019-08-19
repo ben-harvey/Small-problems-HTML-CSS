@@ -1,0 +1,19 @@
+main {
+  max-width: 1000px;
+  min-width: 500px;
+}
+
+.content,
+.sidebar {
+  padding: 20px 30px;
+}
+
+.content {
+  box-sizing: border-box;
+  float: left;
+  width: 70%;
+}
+
+.sidebar {
+  overflow: hidden;
+}

@@ -1,0 +1,10 @@
+a {
+  color: #f00;
+}
+
+@media (max-width: 480px) {
+  a {
+    color: #06c;
+  }
+}
+

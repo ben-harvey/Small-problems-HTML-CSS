@@ -1,0 +1,81 @@
+@import url('reset.css');
+
+body {
+  background-image: url('bg_body.gif');
+  font: 400 20px "Nunito Sans", sans-serif;
+  margin: 0;
+  }
+
+header, main, footer {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  margin: 0 auto 88px auto;
+  padding-top: 159px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 100;
+  padding: 18px 0;
+  letter-spacing: 0.2px;
+}
+
+h3 {
+  letter-spacing: 0.2px;
+  color: #3e98b2;
+  font-size: 24px;
+  font-weight: 800;
+  padding-top: 10px;
+}
+
+main {
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  padding: 100px 90px 53px 90px;
+  text-align: center;
+}
+
+h2::before,
+h2::after {
+  content: "\2022";
+  font-size: 28px;
+  padding: 0 25px 0 20px;
+  vertical-align: 5px;
+  text-align: center;
+}
+
+.founder {
+  margin: 135px 0 10px 0;
+}
+
+footer {
+  background: #e7e7e7;
+  margin-bottom: 145px;
+  padding: 35px 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer li {
+  padding: 0 60px;
+}
+
+footer img {
+  display: block;
+}

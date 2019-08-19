@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+html {
+  color: white;
+}
+
+h1 {
+  margin: 30px 0;
+}
+
+figcaption {
+  padding-top: 10px;
+  text-align: left;
+}
+
+main {
+  background-color: #3c3c3d;
+  margin: 0 auto;
+  max-width: 1000px;
+  min-width: 500px;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+}
+
+img {
+  border: 15px solid white;
+  width: 100%;
+
+}
+
+
+
+ul {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+ul img {
+  border: 2px solid white;
+
+}
