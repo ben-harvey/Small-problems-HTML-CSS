@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://launchschool.com/quizzes/90755cd1/edit -->
+<html lang="en-US" data-livestyle-extension="available" style="" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths wf-proximanova-n7-active wf-proximanova-i7-active wf-proximanova-n4-active wf-proximanova-i4-active wf-myriadpro-n7-active wf-myriadpro-i7-active wf-myriadpro-i4-active wf-myriadpro-n3-active wf-myriadpro-i3-active wf-myriadpro-n4-active wf-myriadpro-n6-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid {
+        padding-top: 56.25%
+      }
+    </style><meta class="foundation-mq-small"><meta class="foundation-mq-small-only"><meta class="foundation-mq-medium"><meta class="foundation-mq-medium-only"><meta class="foundation-mq-large"><meta class="foundation-mq-large-only"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-xlarge-only"><meta class="foundation-mq-xxlarge"><meta class="foundation-data-attribute-namespace">
+<title>Launch School - an online school for Software Engineers</title>
+
+<script src="./Launch School - an online school for Software Engineers_files/nr-1118.min.js"></script><script async="" src="./Launch School - an online school for Software Engineers_files/analytics.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpEE10YTFAXTFdRDRI=","queueTime":4,"applicationTime":174,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0" name="viewport">
+<meta content="https://www.launchschool.com" property="og:url">
+<meta content="website" property="og:type">
+<meta content="Launch School - An Online School For Software Engineers" property="og:title">
+<meta content="" property="og:description">
+<meta content="https://d24f1whwu8r3u4.cloudfront.net/assets/launch-logo-thumbnail-7517069ae59c8408c8f7c2f4d7fd032c2620ada4dae058ca7250098505a52ce8.jpg" property="og:image">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="zUNx9D86G43uVnsZ2S0ptDlZBZMiU9XuhH4dkRH/2nQztIce88zG1c9+gjy1dY+yTGBAot6BrAaIVkXf93S8pw==">
+<link rel="stylesheet" media="screen" href="./Launch School - an online school for Software Engineers_files/application-8a189a9a9d95e4d1a274e4ce786f73426cfde5958aadd9a75b62ebec2ea26cfc.css" data-turbolinks-track="reload">
+<link rel="stylesheet" media="screen" href="./Launch School - an online school for Software Engineers_files/css" data-turbolinks-track="reload">
+<link rel="stylesheet" media="screen" href="./Launch School - an online school for Software Engineers_files/font-awesome.min.css" data-turbolinks-track="reload">
+<script src="./Launch School - an online school for Software Engineers_files/modernizr-74da3245def7569da28115667be6a85a2ad97464abe707c9829c46d8975597bc.js"></script>
+<script src="./Launch School - an online school for Software Engineers_files/application-1478216482427544dbc3aba583a103aa7f5b3f1cffcf213555dfefc8aa892aa3.js" debug="false" data-turbolinks-track="reload"></script><style></style>
+<script data-turbolinks-track="reload" src="./Launch School - an online school for Software Engineers_files/ojn6sam.js"></script>
+<style type="text/css">.tk-proxima-nova{font-family:"proxima-nova",sans-serif;}.tk-myriad-pro{font-family:"myriad-pro",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-proxima-nova-n7;src:url(https://use.typekit.net/af/87f9a7/000000000000000000017829/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/87f9a7/000000000000000000017829/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/87f9a7/000000000000000000017829/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:tk-proxima-nova-i7;src:url(https://use.typekit.net/af/e806ea/00000000000000000001782a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/e806ea/00000000000000000001782a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/e806ea/00000000000000000001782a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:tk-proxima-nova-n4;src:url(https://use.typekit.net/af/3ae8bb/000000000000000000017823/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/3ae8bb/000000000000000000017823/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/3ae8bb/000000000000000000017823/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:tk-proxima-nova-i4;src:url(https://use.typekit.net/af/7dd23f/000000000000000000017824/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/7dd23f/000000000000000000017824/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/7dd23f/000000000000000000017824/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:tk-myriad-pro-n7;src:url(https://use.typekit.net/af/1b1b1e/00000000000000000001709e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/1b1b1e/00000000000000000001709e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/1b1b1e/00000000000000000001709e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:tk-myriad-pro-i7;src:url(https://use.typekit.net/af/2e2357/00000000000000000001709f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/2e2357/00000000000000000001709f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/2e2357/00000000000000000001709f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:tk-myriad-pro-i4;src:url(https://use.typekit.net/af/d32e26/00000000000000000001709b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/d32e26/00000000000000000001709b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/d32e26/00000000000000000001709b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:tk-myriad-pro-n3;src:url(https://use.typekit.net/af/c630c3/000000000000000000017098/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/c630c3/000000000000000000017098/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/c630c3/000000000000000000017098/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}@font-face{font-family:tk-myriad-pro-i3;src:url(https://use.typekit.net/af/ee605b/000000000000000000017099/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("woff2"),url(https://use.typekit.net/af/ee605b/000000000000000000017099/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("woff"),url(https://use.typekit.net/af/ee605b/000000000000000000017099/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("opentype");font-weight:300;font-style:italic;}@font-face{font-family:tk-myriad-pro-n4;src:url(https://use.typekit.net/af/cafa63/00000000000000000001709a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/cafa63/00000000000000000001709a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/cafa63/00000000000000000001709a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:tk-myriad-pro-n6;src:url(https://use.typekit.net/af/80c5d0/00000000000000000001709c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("woff2"),url(https://use.typekit.net/af/80c5d0/00000000000000000001709c/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("woff"),url(https://use.typekit.net/af/80c5d0/00000000000000000001709c/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;}</style><script>
+  try{Typekit.load({ async: true });}catch(e){}
+</script>
+<script src="./Launch School - an online school for Software Engineers_files/saved_resource" data-turbolinks-track="reload"></script>
+<script>
+  Stripe.setPublishableKey("pk_live_hj1Wdd0CL2psFAzlEAhQF4aB");
+</script>
+<link rel="shortcut icon" type="image/x-icon" href="https://d24f1whwu8r3u4.cloudfront.net/favicon.ico" data-turbolinks-track="reload">
+<link href="https://launchschool.com/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+<link href="https://launchschool.com/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
+<link href="https://launchschool.com/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+<link href="https://launchschool.com/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+<link href="https://launchschool.com/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+<link href="https://launchschool.com/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+<link href="https://launchschool.com/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+<link href="https://launchschool.com/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+<link href="https://launchschool.com/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+<link href="https://launchschool.com/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="https://launchschool.com/favicon-194x194.png" rel="icon" sizes="194x194" type="image/png">
+<link href="https://launchschool.com/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+<link href="https://launchschool.com/android-chrome-192x192.png" rel="icon" sizes="192x192" type="image/png">
+<link href="https://launchschool.com/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="https://launchschool.com/manifest.json" rel="manifest">
+<link color="#5bbad5" href="https://launchschool.com/safari-pinned-tab.svg" rel="mask-icon">
+<meta content="#45494d" name="msapplication-TileColor">
+<meta content="/mstile-144x144.png" name="msapplication-TileImage">
+<meta content="#ffffff" name="theme-color">
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-37357872-2', 'auto', {'name': 'secondtracker'});
+  ga('secondtracker.require', 'displayfeatures');
+  ga('secondtracker.require', 'linkid', 'linkid.js');
+  ga('secondtracker.send', 'pageview');
+</script>
+
+<style type="text/css">@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/87f9a7/000000000000000000017829/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/87f9a7/000000000000000000017829/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/87f9a7/000000000000000000017829/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/e806ea/00000000000000000001782a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/e806ea/00000000000000000001782a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/e806ea/00000000000000000001782a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/3ae8bb/000000000000000000017823/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/3ae8bb/000000000000000000017823/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/3ae8bb/000000000000000000017823/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/7dd23f/000000000000000000017824/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/7dd23f/000000000000000000017824/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/7dd23f/000000000000000000017824/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:myriad-pro;src:url(https://use.typekit.net/af/1b1b1e/00000000000000000001709e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/1b1b1e/00000000000000000001709e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/1b1b1e/00000000000000000001709e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:myriad-pro;src:url(https://use.typekit.net/af/2e2357/00000000000000000001709f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/2e2357/00000000000000000001709f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/2e2357/00000000000000000001709f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:myriad-pro;src:url(https://use.typekit.net/af/d32e26/00000000000000000001709b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/d32e26/00000000000000000001709b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/d32e26/00000000000000000001709b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:myriad-pro;src:url(https://use.typekit.net/af/c630c3/000000000000000000017098/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/c630c3/000000000000000000017098/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/c630c3/000000000000000000017098/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}@font-face{font-family:myriad-pro;src:url(https://use.typekit.net/af/ee605b/000000000000000000017099/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("woff2"),url(https://use.typekit.net/af/ee605b/000000000000000000017099/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("woff"),url(https://use.typekit.net/af/ee605b/000000000000000000017099/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("opentype");font-weight:300;font-style:italic;}@font-face{font-family:myriad-pro;src:url(https://use.typekit.net/af/cafa63/00000000000000000001709a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/cafa63/00000000000000000001709a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/cafa63/00000000000000000001709a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:myriad-pro;src:url(https://use.typekit.net/af/80c5d0/00000000000000000001709c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("woff2"),url(https://use.typekit.net/af/80c5d0/00000000000000000001709c/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("woff"),url(https://use.typekit.net/af/80c5d0/00000000000000000001709c/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;}</style><meta class="foundation-mq-topbar"></head>
+<body class="internal" data-ng-app="app" cz-shortcut-listen="true">
+<div id="real-top"></div>
+<nav class="top-bar hide-for-large-up" data-options="is_hover: false; mobile_show_parent_link: false" data-topbar="" role="navigation" style="">
+<ul class="title-area">
+<li class="name">
+<h1>
+<a href="https://launchschool.com/"><img src="./Launch School - an online school for Software Engineers_files/launch-logo-dark-background-abef2efb9c6721246db3db0a8f3ae66c64d8cf64a041a0dbca339d22acecfd9f.svg" alt="Launch logo dark background" width="120" height="25">
+</a></h1>
+</li>
+<li class="toggle-topbar menu-icon">
+<a href="https://launchschool.com/quizzes/90755cd1/edit#">
+<span>Menu</span>
+</a>
+</li>
+</ul>
+
+<section class="top-bar-section">
+<ul class="right">
+<li><a class="" href="https://launchschool.com/course_catalog">Courses</a></li>
+<li>
+<a class="" href="https://launchschool.com/forum">Forum
+<span class="post_unread_count">(3)</span>
+</a></li>
+<li>
+<a class="" href="https://launchschool.com/events">Events
+<span class="event_unread_count">(6)</span>
+</a></li>
+<li>
+<a class="" href="https://launchschool.com/social">Sharing
+<span class="social_share_unread_count">(10+)</span>
+</a></li>
+<li><a class="" href="https://launchschool.com/resources">Resources</a></li>
+<li><a class="" href="https://launchschool.com/exercises">Exercises</a></li>
+<li class="has-dropdown">
+<a class="" href="https://launchschool.com/quizzes/90755cd1/edit">Pages</a>
+<ul class="dropdown" style="margin-bottom: 0 !important"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
+<li><a class="" href="https://launchschool.com/pedagogy">Our Pedagogy</a></li>
+<li><a class="" href="https://launchschool.com/mastery">Mastery-based Learning</a></li>
+<li><a class="" href="https://launchschool.com/results">Results &amp; Outcomes</a></li>
+<li><a class="" href="https://launchschool.com/employers">For Employers</a></li>
+<li><a class="" href="https://launchschool.com/is_this_for_me">Is This For Me</a></li>
+<li><a class="" href="https://launchschool.com/faq">Common Questions</a></li>
+<li><a class="" href="https://launchschool.com/student_experience">The Student Experience</a></li>
+<li><a class="" href="https://launchschool.com/courses">Core Curriculum</a></li>
+<li><a class="" href="https://launchschool.com/capstone">Capstone</a></li>
+</ul>
+</li>
+<li class="separator"></li>
+<li><a class="" href="https://launchschool.com/chat">Chat Room</a></li>
+<li class="separator"></li>
+<li><a class="" href="https://launchschool.com/settings/profile">My Account</a></li>
+<li>
+<a class="" href="https://launchschool.com/student/assessments">My Assessments
+</a></li>
+<li><a rel="nofollow" data-method="delete" href="https://launchschool.com/sign_out">Sign Out</a></li>
+</ul>
+</section></nav>
+
+
+<nav class="nav-drawer columns">
+<ul>
+<li class="logo">
+<a href="https://launchschool.com/course_catalog"><img src="./Launch School - an online school for Software Engineers_files/launch-logo-icon-only-gray-0594610ec9b69f0dc11719162f74d0159b4f4f0df34378b5550457d0960cc785.svg" alt="Launch logo icon only gray" width="32" height="32">
+</a></li>
+<li class="">
+<a class="icon courses" href="https://launchschool.com/course_catalog"><span>Courses</span>
+</a></li>
+<li>
+<a class="icon forum" href="https://launchschool.com/forum"><span>
+Forum
+<span class="post_unread_count">(3)</span>
+</span>
+</a></li>
+<li class="">
+<a class="icon calendar" href="https://launchschool.com/events"><span>
+Events
+<span class="event_unread_count">(6)</span>
+</span>
+</a></li>
+<li class="">
+<a class="icon social" href="https://launchschool.com/social"><span>
+Sharing
+<span class="social_share_unread_count">(10+)</span>
+</span>
+</a></li>
+<li class="">
+<a class="icon folder" href="https://launchschool.com/resources"><span>Resources</span>
+</a></li>
+<li class="">
+<a class="icon exercise" href="https://launchschool.com/exercises"><span>Exercises</span>
+</a></li>
+<li class="has-dropdown">
+<a class="icon tab-arrow-right" href="https://launchschool.com/quizzes/90755cd1/edit">Pages</a>
+<ul class="dropdown">
+<li><a class="" href="https://launchschool.com/pedagogy">Our Pedagogy</a></li>
+<li><a class="" href="https://launchschool.com/mastery">Mastery-based Learning</a></li>
+<li><a class="" href="https://launchschool.com/results">Results &amp; Outcomes</a></li>
+<li><a class="" href="https://launchschool.com/employers">For Employers</a></li>
+<li><a class="" href="https://launchschool.com/is_this_for_me">Is This For Me</a></li>
+<li><a class="" href="https://launchschool.com/faq">Common Questions</a></li>
+<li><a class="" href="https://launchschool.com/student_experience">The Student Experience</a></li>
+<li><a class="" href="https://launchschool.com/courses">Core Curriculum</a></li>
+<li><a class="" href="https://launchschool.com/capstone">Capstone</a></li>
+</ul>
+</li>
+<li class="spacer"></li>
+<li class="">
+<a class="icon chat" href="https://launchschool.com/chat"><span>Chat Room</span>
+</a></li>
+<li class="spacer"></li>
+<li class="">
+<a class="icon account" href="https://launchschool.com/settings/profile"><span title="Ben Harvey &lt;benjaminriderharvey@gmail.com&gt;">My Account</span>
+</a></li>
+<li class="">
+<a class="icon assessments" href="https://launchschool.com/student/assessments"><span>
+My Assessments
+</span>
+</a></li>
+<li>
+<a class="icon exit" rel="nofollow" data-method="delete" href="https://launchschool.com/sign_out"><span>Sign Out</span>
+</a></li>
+</ul>
+</nav>
+
+<div class="wrapper">
+<section class="container">
+<div class="row">
+<div class="columns small-12">
+
+</div>
+</div>
+
+<div class="row">
+<div class="columns small-12">
+<div class="white-background full-width-background">
+
+</div>
+</div>
+</div>
+<div class="row">
+<div class="columns small-12" id="flash-message">
+
+</div>
+</div>
+<div class="row">
+<div class="columns small-12">
+
+
+</div>
+</div>
+<div class="row">
+<div class="columns small-12" id="main-content">
+<section id="assessment-thread">
+<div class="assessment-top-panel">
+<div class="top-panel-metadata">
+<h1>JS210 - Computational Thinking and JavaScript Programming</h1>
+<dl class="orange-links">
+<dt>Assignment:</dt>
+<dd><a href="https://launchschool.com/lessons/4f7d463e/assignments/f3b0f074">Quiz</a></dd>
+<dt>Student Name:</dt>
+<dd><a href="https://launchschool.com/users/0e96fb1d">Ben Harvey</a></dd>
+<dt>Time Started:</dt>
+<dd>
+<abbr>2:51PM EDT</abbr>
+</dd>
+</dl>
+<div class="assessment-flash-message clearfix">
+
+</div>
+</div>
+</div>
+<div class="assessment-content" id="assessment-initial-submission">
+<div class="question-bucket multiple-questions">
+<div class="non-question-row">
+<div class="question-intro"></div>
+</div>
+<div class="first question-row">
+<div class="question-item unanswered" id="question_id_256d265e59061e1b233949321ab1bc4f4c46313a"><div class="question-header">
+<a class="question-category" href="https://launchschool.com/quizzes/90755cd1/edit">Question 1</a>
+<a class="right close-question" title="Collapse question">
+<i aria-hidden="true" class="fa fa-minus"></i>
+</a>
+<a class="right edit-question" title="Expand question">
+<i aria-hidden="true" class="fa fa-plus"></i>
+</a>
+<span class="question-status right saved">
+Saved
+</span>
+</div>
+<div class="dot saved-answer-dot" title="Saved Answer Dot"></div>
+<div class="body clearfix" style="display: none;">
+<div class="question-content"><div class="tealeaf-markup"><p>Which of the following methods can be used to create an array based on the contents of a string?</p>
+</div></div>
+<div class="answer-content">
+<h3>Your Answer</h3>
+<div class="multiple-choices">
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content viewing">
+<input type="checkbox" id="" disabled="disabled" class="ls-checkbox" checked="checked"><label><div class="tealeaf-markup"><p><code class=" language-undefined">String.prototype.match</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content viewing">
+<input type="checkbox" id="" disabled="disabled" class="ls-checkbox" checked="checked"><label><div class="tealeaf-markup"><p><code class=" language-undefined">String.prototype.split</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content viewing">
+<input type="checkbox" id="" disabled="disabled" class="ls-checkbox" checked="checked"><label><div class="tealeaf-markup"><p><code class=" language-undefined">RegExp.prototype.exec</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content viewing">
+<input type="checkbox" id="" disabled="disabled" class="ls-checkbox"><label><div class="tealeaf-markup"><p><code class=" language-undefined">String.prototype.search</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content viewing">
+<input type="checkbox" id="" disabled="disabled" class="ls-checkbox"><label><div class="tealeaf-markup"><p>None of the above.</p>
+</div>
+</label></div>
+</div>
+</div>
+</div>
+</div>
+<div class="question-footer">
+<div class="student-submission-local-message"><div class="alert-box success radius" data-alert="">
+Your answer was saved. You still need to submit the quiz by clicking the 'Submit My Answers' button below.
+<a class="close close-flash-message" href="https://launchschool.com/quizzes/90755cd1/edit#">×</a>
+</div>
+</div>
+<div class="question-edit-area">
+<div class="question-edit-form-box hide">
+<h3>Your Answer</h3>
+<form action="https://launchschool.com/quizzes/90755cd1/student_submissions/256d265e59061e1b233949321ab1bc4f4c46313a" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method" value="patch">
+<input type="hidden" name="question_id" id="question_id" value="256d265e59061e1b233949321ab1bc4f4c46313a">
+<div class="input-area multiple-choices">
+<div class="question-checkboxes">
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_c896a58b78ae8e261bf31fd24b9292a60910f217" value="c896a58b78ae8e261bf31fd24b9292a60910f217" class="ls-checkbox" checked="checked"><label for="choice_c896a58b78ae8e261bf31fd24b9292a60910f217"><div class="tealeaf-markup"><p><code class=" language-undefined">String.prototype.match</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_b847be86064cf0a51bf7ad244a193f16737de867" value="b847be86064cf0a51bf7ad244a193f16737de867" class="ls-checkbox" checked="checked"><label for="choice_b847be86064cf0a51bf7ad244a193f16737de867"><div class="tealeaf-markup"><p><code class=" language-undefined">String.prototype.split</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_a40c3f775a87e2265353b9ebfcc0822837946e36" value="a40c3f775a87e2265353b9ebfcc0822837946e36" class="ls-checkbox" checked="checked"><label for="choice_a40c3f775a87e2265353b9ebfcc0822837946e36"><div class="tealeaf-markup"><p><code class=" language-undefined">RegExp.prototype.exec</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_442da4bfc77108ddcef439f3bdccff4a65c4b979" value="442da4bfc77108ddcef439f3bdccff4a65c4b979" class="ls-checkbox"><label for="choice_442da4bfc77108ddcef439f3bdccff4a65c4b979"><div class="tealeaf-markup"><p><code class=" language-undefined">String.prototype.search</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_6b90168acce824cdac0bc8206648ef3ff8b55cf5" value="6b90168acce824cdac0bc8206648ef3ff8b55cf5" class="ls-checkbox"><label for="choice_6b90168acce824cdac0bc8206648ef3ff8b55cf5"><div class="tealeaf-markup"><p>None of the above.</p>
+</div>
+</label></div>
+</div>
+</div>
+</div>
+</div>
+<div class="action-buttons">
+<a class="button small round secondary question-edit-cancel-button no-bottom-margin" data-show-answer="true" href="https://launchschool.com/quizzes/90755cd1/edit">Cancel</a>
+<button name="button" type="submit" class="button small round primary no-bottom-margin" data-disable-with="Please wait ...">Save</button>
+</div>
+
+</form>
+
+
+</div>
+<div class="question-actions action-buttons">
+<a class="button small round secondary question-edit-button no-bottom-margin" data-hide-answer="true" href="https://launchschool.com/quizzes/90755cd1/edit">Edit</a>
+<div class="right">
+<a class="orange-link move-to-next-question no-bottom-margin" data-next-question-id="cc5b029d21d60612e1b1ffdbd71b9efbaed4f53d" href="https://launchschool.com/quizzes/90755cd1/edit">Next question <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="non-question-row">
+<div class="question-intro"></div>
+</div>
+<div class="question-row">
+<div class="question-item unanswered" id="question_id_cc5b029d21d60612e1b1ffdbd71b9efbaed4f53d"><div class="question-header">
+<a class="question-category" href="https://launchschool.com/quizzes/90755cd1/edit">Question 2</a>
+<a class="right close-question" title="Collapse question">
+<i aria-hidden="true" class="fa fa-minus"></i>
+</a>
+<a class="right edit-question" title="Expand question">
+<i aria-hidden="true" class="fa fa-plus"></i>
+</a>
+<span class="question-status right saved">
+Saved
+</span>
+</div>
+<div class="dot saved-answer-dot" title="Saved Answer Dot"></div>
+<div class="body clearfix" style="display: none;">
+<div class="question-content"><div class="tealeaf-markup"><p>The following code should produce the output shown below it, when given the corresponding input. Which lines should you change so that the function works as expected?</p>
+
+<pre class="language-javascript line-numbers"><code class=" language-javascript"><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> list<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span>word<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> word<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token regex">/[aeiou]/i</span><span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span>acc<span class="token punctuation">,</span> letterList<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> acc <span class="token operator">+</span> letterList<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left">Input</th>
+<th style="text-align: left">Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left"><code class=" language-undefined">['cart', 'truck', 'cart', 'train']</code></td>
+<td style="text-align: left">5</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class=" language-undefined">['apple', 'banana', 'orange']</code></td>
+<td style="text-align: left">8</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class=" language-undefined">['a', 'b', 'c']</code></td>
+<td style="text-align: left">1</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class=" language-undefined">['a', 'e', 'i', 'o', 'u']</code></td>
+<td style="text-align: left">5</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+<div class="answer-content">
+<h3>Your Answer</h3>
+<div class="multiple-choices">
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content viewing">
+<input type="checkbox" id="" disabled="disabled" class="ls-checkbox" checked="checked"><label><div class="tealeaf-markup"><p>line 3</p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content viewing">
+<input type="checkbox" id="" disabled="disabled" class="ls-checkbox"><label><div class="tealeaf-markup"><p>line 4</p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content viewing">
+<input type="checkbox" id="" disabled="disabled" class="ls-checkbox"><label><div class="tealeaf-markup"><p>line 5</p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content viewing">
+<input type="checkbox" id="" disabled="disabled" class="ls-checkbox"><label><div class="tealeaf-markup"><p>line 6</p>
+</div>
+</label></div>
+</div>
+</div>
+</div>
+</div>
+<div class="question-footer">
+<div class="student-submission-local-message"><div class="alert-box success radius" data-alert="">
+Your answer was saved. You still need to submit the quiz by clicking the 'Submit My Answers' button below.
+<a class="close close-flash-message" href="https://launchschool.com/quizzes/90755cd1/edit#">×</a>
+</div>
+</div>
+<div class="question-edit-area">
+<div class="question-edit-form-box hide">
+<h3>Your Answer</h3>
+<form action="https://launchschool.com/quizzes/90755cd1/student_submissions/cc5b029d21d60612e1b1ffdbd71b9efbaed4f53d" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method" value="patch">
+<input type="hidden" name="question_id" id="question_id" value="cc5b029d21d60612e1b1ffdbd71b9efbaed4f53d">
+<div class="input-area multiple-choices">
+<div class="question-checkboxes">
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_9123e577cf340aec079fdf8e7812dcdc0fa27f4b" value="9123e577cf340aec079fdf8e7812dcdc0fa27f4b" class="ls-checkbox" checked="checked"><label for="choice_9123e577cf340aec079fdf8e7812dcdc0fa27f4b"><div class="tealeaf-markup"><p>line 3</p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_38cf95a72542ad4b45c4dd6cf7313690c9f090f4" value="38cf95a72542ad4b45c4dd6cf7313690c9f090f4" class="ls-checkbox"><label for="choice_38cf95a72542ad4b45c4dd6cf7313690c9f090f4"><div class="tealeaf-markup"><p>line 4</p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_e4f300babc6f7758adf311aac3b92e299f2c6f37" value="e4f300babc6f7758adf311aac3b92e299f2c6f37" class="ls-checkbox"><label for="choice_e4f300babc6f7758adf311aac3b92e299f2c6f37"><div class="tealeaf-markup"><p>line 5</p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_3922973a3d26bfbef6d07bcce9faa3d584c624ff" value="3922973a3d26bfbef6d07bcce9faa3d584c624ff" class="ls-checkbox"><label for="choice_3922973a3d26bfbef6d07bcce9faa3d584c624ff"><div class="tealeaf-markup"><p>line 6</p>
+</div>
+</label></div>
+</div>
+</div>
+</div>
+</div>
+<div class="action-buttons">
+<a class="button small round secondary question-edit-cancel-button no-bottom-margin" data-show-answer="true" href="https://launchschool.com/quizzes/90755cd1/edit">Cancel</a>
+<button name="button" type="submit" class="button small round primary no-bottom-margin" data-disable-with="Please wait ...">Save</button>
+</div>
+
+</form>
+
+
+</div>
+<div class="question-actions action-buttons">
+<a class="button small round secondary question-edit-button no-bottom-margin" data-hide-answer="true" href="https://launchschool.com/quizzes/90755cd1/edit">Edit</a>
+<div class="right">
+<a class="orange-link move-to-next-question no-bottom-margin" data-next-question-id="e06a22efeb5147a547652c9f6f7a9c7f374ff0e9" href="https://launchschool.com/quizzes/90755cd1/edit">Next question <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="non-question-row">
+<div class="question-intro"></div>
+</div>
+<div class="question-row">
+<div class="question-item unanswered" id="question_id_e06a22efeb5147a547652c9f6f7a9c7f374ff0e9"><div class="question-header">
+<a class="question-category" href="https://launchschool.com/quizzes/90755cd1/edit">Question 3</a>
+<a class="right close-question" title="Collapse question">
+<i aria-hidden="true" class="fa fa-minus"></i>
+</a>
+<a class="right edit-question" title="Expand question">
+<i aria-hidden="true" class="fa fa-plus"></i>
+</a>
+<span class="question-status right saved">
+Saved
+</span>
+</div>
+<div class="dot saved-answer-dot" title="Saved Answer Dot"></div>
+<div class="body clearfix" style="display: none;">
+<div class="question-content"><div class="tealeaf-markup"><p>Which of the following statements will return an array of words from string <code class=" language-undefined">text</code>, where a word is defined as any sequence of one or more non-whitespace characters?</p>
+</div></div>
+<div class="answer-content">
+<h3>Your Answer</h3>
+<div class="multiple-choices">
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content viewing">
+<input type="checkbox" id="" disabled="disabled" class="ls-checkbox"><label><div class="tealeaf-markup"><p><code class=" language-undefined">text.split(' ')</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content viewing">
+<input type="checkbox" id="" disabled="disabled" class="ls-checkbox" checked="checked"><label><div class="tealeaf-markup"><p><code class=" language-undefined">text.split(/\s+/)</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content viewing">
+<input type="checkbox" id="" disabled="disabled" class="ls-checkbox"><label><div class="tealeaf-markup"><p><code class=" language-undefined">text.match(/\S+/)</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content viewing">
+<input type="checkbox" id="" disabled="disabled" class="ls-checkbox"><label><div class="tealeaf-markup"><p><code class=" language-undefined">text.match(/\S+/g)</code></p>
+</div>
+</label></div>
+</div>
+</div>
+</div>
+</div>
+<div class="question-footer">
+<div class="student-submission-local-message"><div class="alert-box success radius" data-alert="">
+Your answer was saved. You still need to submit the quiz by clicking the 'Submit My Answers' button below.
+<a class="close close-flash-message" href="https://launchschool.com/quizzes/90755cd1/edit#">×</a>
+</div>
+</div>
+<div class="question-edit-area">
+<div class="question-edit-form-box hide">
+<h3>Your Answer</h3>
+<form action="https://launchschool.com/quizzes/90755cd1/student_submissions/e06a22efeb5147a547652c9f6f7a9c7f374ff0e9" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method" value="patch">
+<input type="hidden" name="question_id" id="question_id" value="e06a22efeb5147a547652c9f6f7a9c7f374ff0e9">
+<div class="input-area multiple-choices">
+<div class="question-checkboxes">
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_cefbf2fd8cdeab38d2365f20f2f7e99353f2dcca" value="cefbf2fd8cdeab38d2365f20f2f7e99353f2dcca" class="ls-checkbox"><label for="choice_cefbf2fd8cdeab38d2365f20f2f7e99353f2dcca"><div class="tealeaf-markup"><p><code class=" language-undefined">text.split(' ')</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_c53abe6627612d200ad4c6d66165ee2bdacc86a4" value="c53abe6627612d200ad4c6d66165ee2bdacc86a4" class="ls-checkbox" checked="checked"><label for="choice_c53abe6627612d200ad4c6d66165ee2bdacc86a4"><div class="tealeaf-markup"><p><code class=" language-undefined">text.split(/\s+/)</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_14e5933008ebbd4202dd9af14cf3252fbba8bb01" value="14e5933008ebbd4202dd9af14cf3252fbba8bb01" class="ls-checkbox"><label for="choice_14e5933008ebbd4202dd9af14cf3252fbba8bb01"><div class="tealeaf-markup"><p><code class=" language-undefined">text.match(/\S+/)</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_f81ad0e0e528cf576b68f9cada274445cbbb5629" value="f81ad0e0e528cf576b68f9cada274445cbbb5629" class="ls-checkbox"><label for="choice_f81ad0e0e528cf576b68f9cada274445cbbb5629"><div class="tealeaf-markup"><p><code class=" language-undefined">text.match(/\S+/g)</code></p>
+</div>
+</label></div>
+</div>
+</div>
+</div>
+</div>
+<div class="action-buttons">
+<a class="button small round secondary question-edit-cancel-button no-bottom-margin" data-show-answer="true" href="https://launchschool.com/quizzes/90755cd1/edit">Cancel</a>
+<button name="button" type="submit" class="button small round primary no-bottom-margin" data-disable-with="Please wait ...">Save</button>
+</div>
+
+</form>
+
+
+</div>
+<div class="question-actions action-buttons">
+<a class="button small round secondary question-edit-button no-bottom-margin" data-hide-answer="true" href="https://launchschool.com/quizzes/90755cd1/edit">Edit</a>
+<div class="right">
+<a class="orange-link move-to-next-question no-bottom-margin" data-next-question-id="03bc5a24ff0009ee48736759e8ea24f30f9016ba" href="https://launchschool.com/quizzes/90755cd1/edit">Next question <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="non-question-row">
+<div class="question-intro"></div>
+</div>
+<div class="question-row">
+<div class="question-item unanswered" id="question_id_03bc5a24ff0009ee48736759e8ea24f30f9016ba"><div class="question-header">
+<a class="question-category" href="https://launchschool.com/quizzes/90755cd1/edit">Question 4</a>
+<a class="right close-question" title="Collapse question">
+<i aria-hidden="true" class="fa fa-minus"></i>
+</a>
+<a class="right edit-question" title="Expand question">
+<i aria-hidden="true" class="fa fa-plus"></i>
+</a>
+<span class="question-status right saved">
+Saved
+</span>
+</div>
+<div class="dot saved-answer-dot" title="Saved Answer Dot"></div>
+<div class="body clearfix" style="display: none;">
+<div class="question-content"><div class="tealeaf-markup"><p>Which of the following methods can be used to match a string against a regular expression?</p>
+</div></div>
+<div class="answer-content">
+<h3>Your Answer</h3>
+<div class="multiple-choices">
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content viewing">
+<input type="checkbox" id="" disabled="disabled" class="ls-checkbox"><label><div class="tealeaf-markup"><p><code class=" language-undefined">String.prototype.includes</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content viewing">
+<input type="checkbox" id="" disabled="disabled" class="ls-checkbox" checked="checked"><label><div class="tealeaf-markup"><p><code class=" language-undefined">String.prototype.match</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content viewing">
+<input type="checkbox" id="" disabled="disabled" class="ls-checkbox"><label><div class="tealeaf-markup"><p><code class=" language-undefined">String.prototype.replace</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content viewing">
+<input type="checkbox" id="" disabled="disabled" class="ls-checkbox" checked="checked"><label><div class="tealeaf-markup"><p><code class=" language-undefined">String.prototype.search</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content viewing">
+<input type="checkbox" id="" disabled="disabled" class="ls-checkbox" checked="checked"><label><div class="tealeaf-markup"><p><code class=" language-undefined">RegExp.prototype.test</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content viewing">
+<input type="checkbox" id="" disabled="disabled" class="ls-checkbox"><label><div class="tealeaf-markup"><p><code class=" language-undefined">Regexp.prototype.test</code></p>
+</div>
+</label></div>
+</div>
+</div>
+</div>
+</div>
+<div class="question-footer">
+<div class="student-submission-local-message"><div class="alert-box success radius" data-alert="">
+Your answer was saved. You still need to submit the quiz by clicking the 'Submit My Answers' button below.
+<a class="close close-flash-message" href="https://launchschool.com/quizzes/90755cd1/edit#">×</a>
+</div>
+</div>
+<div class="question-edit-area">
+<div class="question-edit-form-box hide">
+<h3>Your Answer</h3>
+<form action="https://launchschool.com/quizzes/90755cd1/student_submissions/03bc5a24ff0009ee48736759e8ea24f30f9016ba" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method" value="patch">
+<input type="hidden" name="question_id" id="question_id" value="03bc5a24ff0009ee48736759e8ea24f30f9016ba">
+<div class="input-area multiple-choices">
+<div class="question-checkboxes">
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_19fc199d6fa052e6d702ea50652f6de556111c86" value="19fc199d6fa052e6d702ea50652f6de556111c86" class="ls-checkbox"><label for="choice_19fc199d6fa052e6d702ea50652f6de556111c86"><div class="tealeaf-markup"><p><code class=" language-undefined">String.prototype.includes</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_974358b04e7104eb66df7711e3470a75a91ef323" value="974358b04e7104eb66df7711e3470a75a91ef323" class="ls-checkbox" checked="checked"><label for="choice_974358b04e7104eb66df7711e3470a75a91ef323"><div class="tealeaf-markup"><p><code class=" language-undefined">String.prototype.match</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_633378aa32ba82dd3e13f6ea84615cb537f984b9" value="633378aa32ba82dd3e13f6ea84615cb537f984b9" class="ls-checkbox"><label for="choice_633378aa32ba82dd3e13f6ea84615cb537f984b9"><div class="tealeaf-markup"><p><code class=" language-undefined">String.prototype.replace</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_2375f857d6b59237486353a17c9f20116b7520f2" value="2375f857d6b59237486353a17c9f20116b7520f2" class="ls-checkbox" checked="checked"><label for="choice_2375f857d6b59237486353a17c9f20116b7520f2"><div class="tealeaf-markup"><p><code class=" language-undefined">String.prototype.search</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_91d6a881cd54401f7c95e4b5fa4e3b6af15697bf" value="91d6a881cd54401f7c95e4b5fa4e3b6af15697bf" class="ls-checkbox" checked="checked"><label for="choice_91d6a881cd54401f7c95e4b5fa4e3b6af15697bf"><div class="tealeaf-markup"><p><code class=" language-undefined">RegExp.prototype.test</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_0fca86855a4d5b1ac03f2c8e708a2e39d79845cc" value="0fca86855a4d5b1ac03f2c8e708a2e39d79845cc" class="ls-checkbox"><label for="choice_0fca86855a4d5b1ac03f2c8e708a2e39d79845cc"><div class="tealeaf-markup"><p><code class=" language-undefined">Regexp.prototype.test</code></p>
+</div>
+</label></div>
+</div>
+</div>
+</div>
+</div>
+<div class="action-buttons">
+<a class="button small round secondary question-edit-cancel-button no-bottom-margin" data-show-answer="true" href="https://launchschool.com/quizzes/90755cd1/edit">Cancel</a>
+<button name="button" type="submit" class="button small round primary no-bottom-margin" data-disable-with="Please wait ...">Save</button>
+</div>
+
+</form>
+
+
+</div>
+<div class="question-actions action-buttons">
+<a class="button small round secondary question-edit-button no-bottom-margin" data-hide-answer="true" href="https://launchschool.com/quizzes/90755cd1/edit">Edit</a>
+<div class="right">
+<a class="orange-link move-to-next-question no-bottom-margin" data-next-question-id="0084c3eba56a96eae9a387416b59778553d72e31" href="https://launchschool.com/quizzes/90755cd1/edit">Next question <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="non-question-row">
+<div class="question-intro"></div>
+</div>
+<div class="question-row">
+<div class="question-item unanswered" id="question_id_0084c3eba56a96eae9a387416b59778553d72e31"><div class="question-header">
+<a class="question-category" href="https://launchschool.com/quizzes/90755cd1/edit">Question 5</a>
+<a class="right close-question" title="Collapse question">
+<i aria-hidden="true" class="fa fa-minus"></i>
+</a>
+<a class="right edit-question" title="Expand question">
+<i aria-hidden="true" class="fa fa-plus"></i>
+</a>
+<span class="question-status right saved">
+Saved
+</span>
+</div>
+<div class="dot saved-answer-dot" title="Saved Answer Dot"></div>
+<div class="body clearfix" style="display: none;">
+<div class="question-content"><div class="tealeaf-markup"><p>Assuming that <code class=" language-undefined">str</code> contains a 10-character string, which of the following describes the operation that <code class=" language-undefined">str.substr(2, 2)</code> performs?</p>
+</div></div>
+<div class="answer-content">
+<h3>Your Answer</h3>
+<div class="multiple-choices">
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content viewing">
+<input type="checkbox" id="" disabled="disabled" class="ls-checkbox"><label><div class="tealeaf-markup"><p>It returns a string that consists of the two characters starting at the second position of the string value referenced by <code class=" language-undefined">str</code>.</p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content viewing">
+<input type="checkbox" id="" disabled="disabled" class="ls-checkbox" checked="checked"><label><div class="tealeaf-markup"><p>It returns a string that consists of the two characters starting at index position 2 of the string value referenced by <code class=" language-undefined">str</code>.</p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content viewing">
+<input type="checkbox" id="" disabled="disabled" class="ls-checkbox"><label><div class="tealeaf-markup"><p>It returns a string of the characters from the string referenced by <code class=" language-undefined">str</code> starting with the character at index position 2 and ending at index position 2.</p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content viewing">
+<input type="checkbox" id="" disabled="disabled" class="ls-checkbox"><label><div class="tealeaf-markup"><p>It returns an array that consists of the two characters starting at index position 2 of the string value referenced by <code class=" language-undefined">str</code>.</p>
+</div>
+</label></div>
+</div>
+</div>
+</div>
+</div>
+<div class="question-footer">
+<div class="student-submission-local-message"><div class="alert-box success radius" data-alert="">
+Your answer was saved. You still need to submit the quiz by clicking the 'Submit My Answers' button below.
+<a class="close close-flash-message" href="https://launchschool.com/quizzes/90755cd1/edit#">×</a>
+</div>
+</div>
+<div class="question-edit-area">
+<div class="question-edit-form-box hide">
+<h3>Your Answer</h3>
+<form action="https://launchschool.com/quizzes/90755cd1/student_submissions/0084c3eba56a96eae9a387416b59778553d72e31" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method" value="patch">
+<input type="hidden" name="question_id" id="question_id" value="0084c3eba56a96eae9a387416b59778553d72e31">
+<div class="input-area multiple-choices">
+<div class="question-checkboxes">
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_cfd48685b7efe082c5e23b357ccf67b424ea2d3f" value="cfd48685b7efe082c5e23b357ccf67b424ea2d3f" class="ls-checkbox"><label for="choice_cfd48685b7efe082c5e23b357ccf67b424ea2d3f"><div class="tealeaf-markup"><p>It returns a string that consists of the two characters starting at the second position of the string value referenced by <code class=" language-undefined">str</code>.</p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_ee02db2b8eb413e56ff13988a9d279848d90d14a" value="ee02db2b8eb413e56ff13988a9d279848d90d14a" class="ls-checkbox" checked="checked"><label for="choice_ee02db2b8eb413e56ff13988a9d279848d90d14a"><div class="tealeaf-markup"><p>It returns a string that consists of the two characters starting at index position 2 of the string value referenced by <code class=" language-undefined">str</code>.</p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_259a5771da34ef575d0822197209b84f8867c9b3" value="259a5771da34ef575d0822197209b84f8867c9b3" class="ls-checkbox"><label for="choice_259a5771da34ef575d0822197209b84f8867c9b3"><div class="tealeaf-markup"><p>It returns a string of the characters from the string referenced by <code class=" language-undefined">str</code> starting with the character at index position 2 and ending at index position 2.</p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_4cb37223641a0a44c5e94b9cc2d1ba87c4d4e2f8" value="4cb37223641a0a44c5e94b9cc2d1ba87c4d4e2f8" class="ls-checkbox"><label for="choice_4cb37223641a0a44c5e94b9cc2d1ba87c4d4e2f8"><div class="tealeaf-markup"><p>It returns an array that consists of the two characters starting at index position 2 of the string value referenced by <code class=" language-undefined">str</code>.</p>
+</div>
+</label></div>
+</div>
+</div>
+</div>
+</div>
+<div class="action-buttons">
+<a class="button small round secondary question-edit-cancel-button no-bottom-margin" data-show-answer="true" href="https://launchschool.com/quizzes/90755cd1/edit">Cancel</a>
+<button name="button" type="submit" class="button small round primary no-bottom-margin" data-disable-with="Please wait ...">Save</button>
+</div>
+
+</form>
+
+
+</div>
+<div class="question-actions action-buttons">
+<a class="button small round secondary question-edit-button no-bottom-margin" data-hide-answer="true" href="https://launchschool.com/quizzes/90755cd1/edit">Edit</a>
+<div class="right">
+<a class="orange-link move-to-next-question no-bottom-margin" data-next-question-id="851bf22e96bea8aecdde44d26e58c3107e63af11" href="https://launchschool.com/quizzes/90755cd1/edit">Next question <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="non-question-row">
+<div class="question-intro"></div>
+</div>
+<div class="last question-row">
+<div class="question-item unanswered expanded" id="question_id_851bf22e96bea8aecdde44d26e58c3107e63af11">
+<div class="question-header">
+<a class="question-category" href="https://launchschool.com/quizzes/90755cd1/edit">Question 6</a>
+<a class="right close-question" title="Collapse question">
+<i aria-hidden="true" class="fa fa-minus"></i>
+</a>
+<a class="right edit-question" title="Expand question">
+<i aria-hidden="true" class="fa fa-plus"></i>
+</a>
+<span class="right question-status">
+
+</span>
+</div>
+<div class="dot  active-dot"></div>
+<div class="body clearfix hide" style="display: block;">
+<div class="question-content"><div class="tealeaf-markup"><p>Assume that <code>str</code> contains a string of text consisting of a mixture of letters and underscores (<code>_</code>). For convenience, we'll call each substring of non-underscore characters a "token." Which of the following expressions returns an array that contains all the tokens in <code>str</code> (with a maximum of one token per element)? You may assume that <code>str</code> contains nothing but letters and underscores.</p>
+</div></div>
+<div class="question-footer">
+<div class="student-submission-local-message"></div>
+<div class="new-student-submission">
+<h3>Your Answer</h3>
+<form action="https://launchschool.com/quizzes/90755cd1/student_submissions" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓">
+<input type="hidden" name="question_id" id="question_id" value="851bf22e96bea8aecdde44d26e58c3107e63af11">
+<div class="input-area multiple-choices">
+<div class="question-checkboxes">
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_96ce4b7034d430e273416cd005c07ba0d454e8a4" value="96ce4b7034d430e273416cd005c07ba0d454e8a4" class="ls-checkbox"><label for="choice_96ce4b7034d430e273416cd005c07ba0d454e8a4"><div class="tealeaf-markup"><p><code>str.match(/[A-Z]+/i)</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_11b064ebc011be092df3e2ebe8db2ca7e1047c92" value="11b064ebc011be092df3e2ebe8db2ca7e1047c92" class="ls-checkbox"><label for="choice_11b064ebc011be092df3e2ebe8db2ca7e1047c92"><div class="tealeaf-markup"><p><code>str.match(/[A-Z]+/gi)</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_0143ba92ca44bb277c40acee3d240de4f3791814" value="0143ba92ca44bb277c40acee3d240de4f3791814" class="ls-checkbox"><label for="choice_0143ba92ca44bb277c40acee3d240de4f3791814"><div class="tealeaf-markup"><p><code>str.match(/\w+/)</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_184e273631f89c80e1cb998f3220fcefc9ad95bb" value="184e273631f89c80e1cb998f3220fcefc9ad95bb" class="ls-checkbox"><label for="choice_184e273631f89c80e1cb998f3220fcefc9ad95bb"><div class="tealeaf-markup"><p><code>str.match(/\w+/g)</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_651911414783c10801b20430977320b2a8bd8742" value="651911414783c10801b20430977320b2a8bd8742" class="ls-checkbox"><label for="choice_651911414783c10801b20430977320b2a8bd8742"><div class="tealeaf-markup"><p><code>str.match(/[A-z]+/g)</code></p>
+</div>
+</label></div>
+</div>
+</div>
+<div class="row answer-choice">
+<div class="columns small-12">
+<div class="choice-content">
+<input type="checkbox" name="student_submission[]" id="choice_46e1feb307c88713d2af26f365b4ef4a5df7a800" value="46e1feb307c88713d2af26f365b4ef4a5df7a800" class="ls-checkbox"><label for="choice_46e1feb307c88713d2af26f365b4ef4a5df7a800"><div class="tealeaf-markup"><p><code>str.split(/_/)</code></p>
+</div>
+</label></div>
+</div>
+</div>
+</div>
+</div>
+<div class="action-buttons">
+<button name="button" type="submit" class="button small round primary no-bottom-margin" data-disable-with="Please wait ...">Save</button>
+<div class="right">
+
+</div>
+</div>
+
+</form>
+
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<form class="edit_quiz" id="edit_quiz_7266" action="https://launchschool.com/quizzes/90755cd1" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method" value="patch"><input type="hidden" name="authenticity_token" value="zUNx9D86G43uVnsZ2S0ptDlZBZMiU9XuhH4dkRH/2nQztIce88zG1c9+gjy1dY+yTGBAot6BrAaIVkXf93S8pw=="><div class="final-submit">
+<input type="submit" name="commit" value="Submit My Answers" class="button small round alert uppercase no-bottom-margin" data-disable-with="Please Wait .." data-confirm="You won&#39;t be able to modify your answers after the submission - are you sure you are ready to submit it now?">
+</div>
+</form></div>
+</div>
+</section>
+
+</div>
+</div>
+</section>
+<div class="right" style="position: relative">
+<a class="hide" href="https://launchschool.com/quizzes/90755cd1/edit#top" id="to-top-link" title="Go to top." style="display: block;">
+<div class="fa fa-angle-double-up fa-3x show-for-medium-up"></div>
+<div class="fa fa-angle-double-up fa-2x show-for-small-only"></div>
+</a>
+</div>
+</div>
+<script type="text/javascript">
+<!-- * <![CDATA[ */ -->
+var google_conversion_id = 1017054330;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+<!-- * ]]> */ -->
+</script>
+<script type="text/javascript" src="./Launch School - an online school for Software Engineers_files/f.txt">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1017054330/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<!-- END - Google Code for Remarketing Tag -->
+
+<div aria-hidden="true" aria-labelledby="modal-title" class="orange-links reveal-modal" data-reveal="" id="formatting-help-modal" role="dialog">
+<h2 class="modal-title">Formatting Help</h2>
+<div class="tealeaf-markup"><h3>Normal Markdown &amp; GFM</h3>
+
+<p><a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/" target="\_blank">Github Flavored Markdown</a></p>
+
+<hr>
+
+<p>**<strong>bold</strong>**</p>
+
+<hr>
+
+<p>~~<del>strike through</del>~~</p>
+
+<hr>
+
+<p>`<code>single line of code</code>`</p>
+
+<hr>
+
+<p>Supports
+<a href="http://www.emoji-cheat-sheet.com/" target="\_blank">Emoji</a></p>
+
+<h3>Code Blocks</h3>
+
+<p>You can write code blocks using three backticks (```) followed by the language you want to show.
+For instance, if you wanted to write a Ruby code block you would write:</p>
+
+<pre class=" language-none" data-numbers="off"><code class=" language-none">```ruby
+class Foo
+end
+```
+</code></pre>
+
+<hr>
+
+<pre class="language-ruby line-numbers"><code class=" language-ruby"><span class="token keyword">class</span> <span class="token class-name">Foo</span>
+<span class="token keyword">end</span>
+<span class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>You can also leave out the language identifier, doing this will make it so your code isn't highlighted at all, and all text will be white with no coloring.</p>
+
+<pre class=" language-none" data-numbers="off"><code class=" language-none">```
+class Bar
+end
+```
+</code></pre>
+
+<hr>
+
+<pre class=" language-none"><code class=" language-none">class Bar
+end
+</code></pre>
+
+<h4>Highlighting</h4>
+
+<p>You may highlight lines within your code blocks. This is a different type of highlighting, and isn't related to how the code within your code block may be colored depending on the language identifier used.<br>
+To highlight one or more lines of code, add <code># highlight</code> on a separate line just before the first line you wish to highlight. To end highlighting, add <code># endhighlight</code> on a separate line immediately after the last line you wish to highlight.</p>
+
+<pre class=" language-none" data-numbers="off"><code class=" language-none">```ruby
+def say_hello_world
+# highlight
+  puts 'Hello World!!!'
+# endhighlight
+end
+```
+</code></pre>
+
+<hr>
+
+<pre class="language-ruby line-numbers"><code class=" language-ruby"><span class="token keyword">def</span> say_hello_world
+  puts <span class="token string">'Hello World!!!'</span>
+<span class="token keyword">end</span>
+<span class="line-numbers-rows"><span></span><span></span><span></span></span></code><div class="prism-highlight highlight" style="top: 25px; height: 24px;"></div></pre>
+</div>
+<a aria-label="Close" class="close-reveal-modal">×</a>
+</div>
+
+
+
+<div id="lightbox" class="hidden"><img><i class="fa fa-close close-lightbox"></i></div><iframe name="stripeXDM_default926911_provider" id="stripeXDM_default926911_provider" aria-hidden="true" src="./Launch School - an online school for Software Engineers_files/channel.html" frameborder="0" style="position: absolute; top: -2000px; left: 0px;"></iframe><iframe src="./Launch School - an online school for Software Engineers_files/outer.html" frameborder="0" allowtransparency="true" scrolling="no" tabindex="-1" aria-hidden="true" style="width: 1px !important; height: 1px !important; position: fixed !important; visibility: hidden !important; pointer-events: none !important;"></iframe></body></html>

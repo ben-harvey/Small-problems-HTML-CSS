@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://launchschool.com/exercises/3d03ea77 -->
+<html lang="en-US" data-livestyle-extension="available" style="" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths wf-proximanova-i7-active wf-proximanova-i4-active wf-proximanova-n7-active wf-proximanova-n4-active wf-myriadpro-n7-active wf-myriadpro-i7-active wf-myriadpro-i4-active wf-myriadpro-n3-active wf-myriadpro-i3-active wf-myriadpro-n4-active wf-myriadpro-n6-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.turbolinks-progress-bar {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #0076ff;
+  z-index: 9999;
+  transition: width 300ms ease-out, opacity 150ms 150ms ease-in;
+  transform: translate3d(0, 0, 0);
+}</style><style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid {
+        padding-top: 56.25%
+      }
+    </style>
+
+
+<script src="./Launch School - an online school for Software Engineers_files/nr-1118.min.js"></script><script async="" src="./Launch School - an online school for Software Engineers_files/analytics.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":2,"applicationTime":198,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+
+
+
+
+
+
+
+
+<link rel="stylesheet" media="screen" href="./Launch School - an online school for Software Engineers_files/application-8a189a9a9d95e4d1a274e4ce786f73426cfde5958aadd9a75b62ebec2ea26cfc.css" data-turbolinks-track="reload">
+<link rel="stylesheet" media="screen" href="./Launch School - an online school for Software Engineers_files/css" data-turbolinks-track="reload">
+<link rel="stylesheet" media="screen" href="./Launch School - an online school for Software Engineers_files/font-awesome.min.css" data-turbolinks-track="reload">
+<script src="./Launch School - an online school for Software Engineers_files/modernizr-74da3245def7569da28115667be6a85a2ad97464abe707c9829c46d8975597bc.js"></script>
+<script src="./Launch School - an online school for Software Engineers_files/application-1478216482427544dbc3aba583a103aa7f5b3f1cffcf213555dfefc8aa892aa3.js" debug="false" data-turbolinks-track="reload"></script><style></style>
+<script data-turbolinks-track="reload" src="./Launch School - an online school for Software Engineers_files/ojn6sam.js"></script>
+<style type="text/css">.tk-proxima-nova{font-family:"proxima-nova",sans-serif;}.tk-myriad-pro{font-family:"myriad-pro",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-proxima-nova-n7;src:url(https://use.typekit.net/af/87f9a7/000000000000000000017829/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/87f9a7/000000000000000000017829/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/87f9a7/000000000000000000017829/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:tk-proxima-nova-i7;src:url(https://use.typekit.net/af/e806ea/00000000000000000001782a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/e806ea/00000000000000000001782a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/e806ea/00000000000000000001782a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:tk-proxima-nova-n4;src:url(https://use.typekit.net/af/3ae8bb/000000000000000000017823/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/3ae8bb/000000000000000000017823/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/3ae8bb/000000000000000000017823/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:tk-proxima-nova-i4;src:url(https://use.typekit.net/af/7dd23f/000000000000000000017824/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/7dd23f/000000000000000000017824/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/7dd23f/000000000000000000017824/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:tk-myriad-pro-n7;src:url(https://use.typekit.net/af/1b1b1e/00000000000000000001709e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/1b1b1e/00000000000000000001709e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/1b1b1e/00000000000000000001709e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:tk-myriad-pro-i7;src:url(https://use.typekit.net/af/2e2357/00000000000000000001709f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/2e2357/00000000000000000001709f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/2e2357/00000000000000000001709f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:tk-myriad-pro-i4;src:url(https://use.typekit.net/af/d32e26/00000000000000000001709b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/d32e26/00000000000000000001709b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/d32e26/00000000000000000001709b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:tk-myriad-pro-n3;src:url(https://use.typekit.net/af/c630c3/000000000000000000017098/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/c630c3/000000000000000000017098/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/c630c3/000000000000000000017098/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}@font-face{font-family:tk-myriad-pro-i3;src:url(https://use.typekit.net/af/ee605b/000000000000000000017099/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("woff2"),url(https://use.typekit.net/af/ee605b/000000000000000000017099/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("woff"),url(https://use.typekit.net/af/ee605b/000000000000000000017099/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("opentype");font-weight:300;font-style:italic;}@font-face{font-family:tk-myriad-pro-n4;src:url(https://use.typekit.net/af/cafa63/00000000000000000001709a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/cafa63/00000000000000000001709a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/cafa63/00000000000000000001709a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:tk-myriad-pro-n6;src:url(https://use.typekit.net/af/80c5d0/00000000000000000001709c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("woff2"),url(https://use.typekit.net/af/80c5d0/00000000000000000001709c/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("woff"),url(https://use.typekit.net/af/80c5d0/00000000000000000001709c/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;}</style><script>
+  try{Typekit.load({ async: true });}catch(e){}
+</script>
+<script src="./Launch School - an online school for Software Engineers_files/saved_resource" data-turbolinks-track="reload"></script>
+<script>
+  Stripe.setPublishableKey("pk_live_hj1Wdd0CL2psFAzlEAhQF4aB");
+</script>
+<link rel="shortcut icon" type="image/x-icon" href="https://d24f1whwu8r3u4.cloudfront.net/favicon.ico" data-turbolinks-track="reload">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-37357872-2', 'auto', {'name': 'secondtracker'});
+  ga('secondtracker.require', 'displayfeatures');
+  ga('secondtracker.require', 'linkid', 'linkid.js');
+  ga('secondtracker.send', 'pageview');
+</script>
+
+<style type="text/css">@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/87f9a7/000000000000000000017829/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/87f9a7/000000000000000000017829/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/87f9a7/000000000000000000017829/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/e806ea/00000000000000000001782a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/e806ea/00000000000000000001782a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/e806ea/00000000000000000001782a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/3ae8bb/000000000000000000017823/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/3ae8bb/000000000000000000017823/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/3ae8bb/000000000000000000017823/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/7dd23f/000000000000000000017824/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/7dd23f/000000000000000000017824/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/7dd23f/000000000000000000017824/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:myriad-pro;src:url(https://use.typekit.net/af/1b1b1e/00000000000000000001709e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/1b1b1e/00000000000000000001709e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/1b1b1e/00000000000000000001709e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:myriad-pro;src:url(https://use.typekit.net/af/2e2357/00000000000000000001709f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/2e2357/00000000000000000001709f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/2e2357/00000000000000000001709f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:myriad-pro;src:url(https://use.typekit.net/af/d32e26/00000000000000000001709b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/d32e26/00000000000000000001709b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/d32e26/00000000000000000001709b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:myriad-pro;src:url(https://use.typekit.net/af/c630c3/000000000000000000017098/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/c630c3/000000000000000000017098/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/c630c3/000000000000000000017098/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}@font-face{font-family:myriad-pro;src:url(https://use.typekit.net/af/ee605b/000000000000000000017099/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("woff2"),url(https://use.typekit.net/af/ee605b/000000000000000000017099/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("woff"),url(https://use.typekit.net/af/ee605b/000000000000000000017099/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("opentype");font-weight:300;font-style:italic;}@font-face{font-family:myriad-pro;src:url(https://use.typekit.net/af/cafa63/00000000000000000001709a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/cafa63/00000000000000000001709a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/cafa63/00000000000000000001709a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:myriad-pro;src:url(https://use.typekit.net/af/80c5d0/00000000000000000001709c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("woff2"),url(https://use.typekit.net/af/80c5d0/00000000000000000001709c/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("woff"),url(https://use.typekit.net/af/80c5d0/00000000000000000001709c/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;}</style><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":4,"applicationTime":362,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":7,"applicationTime":285,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":4,"applicationTime":202,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":1,"applicationTime":180,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBm1SFglARRUbC1hRARs=","queueTime":8,"applicationTime":1273,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBm1GARJGGhVcDUE=","queueTime":4,"applicationTime":246,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":9,"applicationTime":569,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":4,"applicationTime":295,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":5,"applicationTime":337,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":7,"applicationTime":481,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":2,"applicationTime":225,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":4,"applicationTime":252,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":3,"applicationTime":319,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":5,"applicationTime":254,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":1209,"applicationTime":2097,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":3,"applicationTime":261,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBm1SFglARRUbC1hRARs=","queueTime":1,"applicationTime":671,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBm1GARJGGhVcDUE=","queueTime":5,"applicationTime":115,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":4,"applicationTime":274,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBm1SFglARRUbC1hRARs=","queueTime":4,"applicationTime":1100,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBm1GARJGGhVcDUE=","queueTime":2,"applicationTime":125,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":2,"applicationTime":153,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBm1SFglARRUbC1hRARs=","queueTime":1,"applicationTime":588,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBm1GARJGGhVcDUE=","queueTime":3,"applicationTime":97,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":2,"applicationTime":303,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBm1SFglARRUbC1hRARs=","queueTime":4,"applicationTime":603,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBm1GARJGGhVcDUE=","queueTime":10,"applicationTime":170,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":6,"applicationTime":312,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":2,"applicationTime":274,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":4,"applicationTime":392,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":4,"applicationTime":345,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":0,"applicationTime":504,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":12,"applicationTime":746,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":5,"applicationTime":305,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":5,"applicationTime":334,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":6,"applicationTime":456,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":5,"applicationTime":369,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBm1SFglARRUbC1hRARs=","queueTime":2,"applicationTime":1157,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBm1GARJGGhVcDUE=","queueTime":3,"applicationTime":246,"agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4397c8ee4a","applicationID":"3024352","transactionName":"dw1YQRYMXlkBFBpQHlEQVVwXBkEaFw5aQg==","queueTime":14,"applicationTime":255,"agent":""}</script><title>Launch School - an online school for Software Engineers</title><meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0" name="viewport"><meta content="https://www.launchschool.com" property="og:url"><meta content="website" property="og:type"><meta content="Launch School - An Online School For Software Engineers" property="og:title"><meta content="" property="og:description"><meta content="https://d24f1whwu8r3u4.cloudfront.net/assets/launch-logo-thumbnail-7517069ae59c8408c8f7c2f4d7fd032c2620ada4dae058ca7250098505a52ce8.jpg" property="og:image"><meta name="csrf-param" content="authenticity_token"><meta name="csrf-token" content="ziwpK1EzzSIbNs/Ehe54Y/ZsIIq5MV9XAJefhViuFrww29/BncUQejoeNuHptt5lg1Vlu0XjJr8Mv8fLviVwbw=="><link href="https://launchschool.com/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57"><link href="https://launchschool.com/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60"><link href="https://launchschool.com/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"><link href="https://launchschool.com/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76"><link href="https://launchschool.com/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"><link href="https://launchschool.com/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120"><link href="https://launchschool.com/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144"><link href="https://launchschool.com/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152"><link href="https://launchschool.com/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"><link href="https://launchschool.com/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"><link href="https://launchschool.com/favicon-194x194.png" rel="icon" sizes="194x194" type="image/png"><link href="https://launchschool.com/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"><link href="https://launchschool.com/android-chrome-192x192.png" rel="icon" sizes="192x192" type="image/png"><link href="https://launchschool.com/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"><link href="https://launchschool.com/manifest.json" rel="manifest"><link color="#5bbad5" href="https://launchschool.com/safari-pinned-tab.svg" rel="mask-icon"><meta content="#45494d" name="msapplication-TileColor"><meta content="/mstile-144x144.png" name="msapplication-TileImage"><meta content="#ffffff" name="theme-color"></head>
+<body class="internal" data-ng-app="app">
+<div id="real-top"></div>
+<nav class="top-bar hide-for-large-up" data-options="is_hover: false; mobile_show_parent_link: false" data-topbar="" role="navigation" style="">
+<ul class="title-area">
+<li class="name">
+<h1>
+<a href="https://launchschool.com/"><img src="./Launch School - an online school for Software Engineers_files/launch-logo-dark-background-abef2efb9c6721246db3db0a8f3ae66c64d8cf64a041a0dbca339d22acecfd9f.svg" alt="Launch logo dark background" width="120" height="25">
+</a></h1>
+</li>
+<li class="toggle-topbar menu-icon">
+<a href="https://launchschool.com/exercises/3d03ea77#">
+<span>Menu</span>
+</a>
+</li>
+</ul>
+
+<section class="top-bar-section">
+<ul class="right">
+<li><a class="" href="https://launchschool.com/course_catalog">Courses</a></li>
+<li>
+<a class="" href="https://launchschool.com/forum">Forum
+<span class="post_unread_count">(3)</span>
+</a></li>
+<li>
+<a class="" href="https://launchschool.com/events">Events
+<span class="event_unread_count">(6)</span>
+</a></li>
+<li>
+<a class="" href="https://launchschool.com/social">Sharing
+<span class="social_share_unread_count">(10+)</span>
+</a></li>
+<li><a class="" href="https://launchschool.com/resources">Resources</a></li>
+<li><a class="active" href="https://launchschool.com/exercises">Exercises</a></li>
+<li class="has-dropdown">
+<a class="" href="https://launchschool.com/exercises/3d03ea77">Pages</a>
+<ul class="dropdown" style="margin-bottom: 0 !important"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
+<li><a class="" href="https://launchschool.com/pedagogy">Our Pedagogy</a></li>
+<li><a class="" href="https://launchschool.com/mastery">Mastery-based Learning</a></li>
+<li><a class="" href="https://launchschool.com/results">Results &amp; Outcomes</a></li>
+<li><a class="" href="https://launchschool.com/employers">For Employers</a></li>
+<li><a class="" href="https://launchschool.com/is_this_for_me">Is This For Me</a></li>
+<li><a class="" href="https://launchschool.com/faq">Common Questions</a></li>
+<li><a class="" href="https://launchschool.com/student_experience">The Student Experience</a></li>
+<li><a class="" href="https://launchschool.com/courses">Core Curriculum</a></li>
+<li><a class="" href="https://launchschool.com/capstone">Capstone</a></li>
+</ul>
+</li>
+<li class="separator"></li>
+<li><a class="" href="https://launchschool.com/chat">Chat Room</a></li>
+<li class="separator"></li>
+<li><a class="" href="https://launchschool.com/settings/profile">My Account</a></li>
+<li>
+<a class="" href="https://launchschool.com/student/assessments">My Assessments
+</a></li>
+<li><a rel="nofollow" data-method="delete" href="https://launchschool.com/sign_out">Sign Out</a></li>
+</ul>
+</section></nav>
+
+
+<nav class="nav-drawer columns">
+<ul>
+<li class="logo">
+<a href="https://launchschool.com/course_catalog"><img src="./Launch School - an online school for Software Engineers_files/launch-logo-icon-only-gray-0594610ec9b69f0dc11719162f74d0159b4f4f0df34378b5550457d0960cc785.svg" alt="Launch logo icon only gray" width="32" height="32">
+</a></li>
+<li class="">
+<a class="icon courses" href="https://launchschool.com/course_catalog"><span>Courses</span>
+</a></li>
+<li>
+<a class="icon forum" href="https://launchschool.com/forum"><span>
+Forum
+<span class="post_unread_count">(3)</span>
+</span>
+</a></li>
+<li class="">
+<a class="icon calendar" href="https://launchschool.com/events"><span>
+Events
+<span class="event_unread_count">(6)</span>
+</span>
+</a></li>
+<li class="">
+<a class="icon social" href="https://launchschool.com/social"><span>
+Sharing
+<span class="social_share_unread_count">(10+)</span>
+</span>
+</a></li>
+<li class="">
+<a class="icon folder" href="https://launchschool.com/resources"><span>Resources</span>
+</a></li>
+<li class="active">
+<a class="icon exercise" href="https://launchschool.com/exercises"><span>Exercises</span>
+</a></li>
+<li class="has-dropdown">
+<a class="icon tab-arrow-right" href="https://launchschool.com/exercises/3d03ea77">Pages</a>
+<ul class="dropdown">
+<li><a class="" href="https://launchschool.com/pedagogy">Our Pedagogy</a></li>
+<li><a class="" href="https://launchschool.com/mastery">Mastery-based Learning</a></li>
+<li><a class="" href="https://launchschool.com/results">Results &amp; Outcomes</a></li>
+<li><a class="" href="https://launchschool.com/employers">For Employers</a></li>
+<li><a class="" href="https://launchschool.com/is_this_for_me">Is This For Me</a></li>
+<li><a class="" href="https://launchschool.com/faq">Common Questions</a></li>
+<li><a class="" href="https://launchschool.com/student_experience">The Student Experience</a></li>
+<li><a class="" href="https://launchschool.com/courses">Core Curriculum</a></li>
+<li><a class="" href="https://launchschool.com/capstone">Capstone</a></li>
+</ul>
+</li>
+<li class="spacer"></li>
+<li class="">
+<a class="icon chat" href="https://launchschool.com/chat"><span>Chat Room</span>
+</a></li>
+<li class="spacer"></li>
+<li class="">
+<a class="icon account" href="https://launchschool.com/settings/profile"><span title="Ben Harvey &lt;benjaminriderharvey@gmail.com&gt;">My Account</span>
+</a></li>
+<li class="">
+<a class="icon assessments" href="https://launchschool.com/student/assessments"><span>
+My Assessments
+</span>
+</a></li>
+<li>
+<a class="icon exit" rel="nofollow" data-method="delete" href="https://launchschool.com/sign_out"><span>Sign Out</span>
+</a></li>
+</ul>
+</nav>
+
+<div class="wrapper">
+<section class="container">
+<div class="row">
+<div class="columns small-12">
+<div class="page-action-buttons" style="top: 0px;">
+<div class="left">
+
+</div>
+<div class="right">
+<button class="hide-for-large-up" data-reveal-id="feedback_widget_modal" title="Give us your feedback">
+<i class="fa fa-comment-o"></i>
+</button>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="columns small-12">
+<div class="white-background full-width-background">
+
+</div>
+</div>
+</div>
+<div class="row">
+<div class="columns small-12" id="flash-message">
+
+</div>
+</div>
+<div class="row">
+<div class="columns small-12">
+<ul class="gretel-breadcrumbs"><li><a href="https://launchschool.com/exercises#js210_small_problems">JS210 - Small Problems</a></li><li><a href="https://launchschool.com/exercise_sets/d9f7b773">Medium Problems 1</a></li><li class="current">Rotation Part 1</li></ul>
+
+</div>
+</div>
+<div class="row">
+<div class="columns small-12" id="main-content">
+
+
+<button class="give-feedback show-for-large-up" data-reveal-id="feedback_widget_modal" type="button">
+Give us your feedback
+</button>
+<div aria-hidden="true" aria-labelledby="feedback_modal_label" class="reveal-modal" data-reveal="" id="feedback_widget_modal" role="dialog" tabindex="-1">
+<a aria-label="Close" class="close-reveal-modal">×</a>
+<div class="editor-with-markdown-preview">
+<form class="new_feedback_widget" id="new_feedback_widget" action="https://launchschool.com/feedback_widgets" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="ziwpK1EzzSIbNs/Ehe54Y/ZsIIq5MV9XAJefhViuFrww29/BncUQejoeNuHptt5lg1Vlu0XjJr8Mv8fLviVwbw=="><input type="hidden" name="feedback_widget[url]" id="feedback_widget_url" value="https://launchschool.com/exercises/3d03ea77">
+
+<input type="hidden" name="feedback_widget[parent_id]" id="feedback_widget_parent_id" value="690">
+<input type="hidden" name="feedback_widget[type]" id="feedback_widget_type" value="exercises">
+<h4 class="modal-title" id="feedback_modal_label">Suggestions, errors or compliments on this page - let us know!</h4>
+<hr>
+<div class="feedback_message"></div>
+<div class="feedback_errors"></div>
+<select autocomplete="off" name="feedback_widget[category]" id="feedback_widget_category"><option value="">Select a category</option>
+<option value="General Feedback">General Feedback</option>
+<option value="Typo">Typo</option>
+<option value="Improvement">Improvement</option>
+<option value="Bug">Bug</option>
+<option value="Question">Question</option></select>
+<div class="hide" id="question-category-reminder">
+<div class="alert-box info">
+Please don't use this Feedback form to ask questions.
+If you have a question about the content, use the lesson forums and one of our staff will take a look. If you have a general non-technical question, send us an email at <a href="mailto:support@launchschool.com">support@launchschool.com</a>.
+</div>
+</div>
+<div class="textarea-field">
+<label for="feedback_widget_comment">Your comment</label>
+<textarea rows="5" class="form-control" placeholder="Enter comment" name="feedback_widget[comment]" id="feedback_widget_comment"></textarea>
+</div>
+<div class="markdown-preview hide">
+<div class="preview-content"></div>
+<a class="button small secondary round write" href="https://launchschool.com/exercises/3d03ea77">Edit</a>
+<input type="submit" name="commit" value="Send feedback" class="send-feedback button primary round small" data-disable-with="Please wait...">
+</div>
+<div class="actions">
+<a class="button small secondary round preview" href="https://launchschool.com/exercises/3d03ea77">Preview</a>
+<input type="submit" name="commit" value="Send feedback" class="send-feedback button primary round small" data-disable-with="Please wait...">
+</div>
+</form></div>
+</div>
+
+<div class="clearfix" id="exercise">
+<div class="row">
+<div class="columns large-11">
+<header>
+<h1>Rotation Part 1</h1>
+</header>
+<article id="exercise_content">
+<div class="tealeaf-markup"><p>Write a function that rotates an array by moving the first element to the end of the array. Do not modify the original array.</p>
+
+<ul>
+<li>If the input is not an array, return <code>undefined</code>.
+</li>
+<li>If the input is an empty array, return an empty array.
+</li>
+</ul>
+
+<p>Review the test cases below, then implement the solution accordingly.</p>
+
+<pre class=" language-javascript" data-numbers="off"><code class=" language-javascript"><span class="token function">rotateArray</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>       <span class="token comment" spellcheck="true">// [3, 5, 2, 9, 1, 7]</span>
+<span class="token function">rotateArray</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token string">'b'</span><span class="token punctuation">,</span> <span class="token string">'c'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>          <span class="token comment" spellcheck="true">// ["b", "c", "a"]</span>
+<span class="token function">rotateArray</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'a'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                    <span class="token comment" spellcheck="true">// ["a"]</span>
+<span class="token function">rotateArray</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">'c'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>         <span class="token comment" spellcheck="true">// ["a", 3, "c", 1]</span>
+<span class="token function">rotateArray</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">{</span> a<span class="token punctuation">:</span> <span class="token number">2</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">// [[1, 2], 3, { a: 2 }]</span>
+<span class="token function">rotateArray</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                       <span class="token comment" spellcheck="true">// []</span>
+
+<span class="token comment" spellcheck="true">// return `undefined` if the argument is not an array</span>
+<span class="token function">rotateArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                         <span class="token comment" spellcheck="true">// undefined</span>
+<span class="token function">rotateArray</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                        <span class="token comment" spellcheck="true">// undefined</span>
+
+
+<span class="token comment" spellcheck="true">// the input array is not mutated</span>
+<span class="token keyword">var</span> array <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token function">rotateArray</span><span class="token punctuation">(</span>array<span class="token punctuation">)</span><span class="token punctuation">;</span>                    <span class="token comment" spellcheck="true">// [2, 3, 4, 1]</span>
+array<span class="token punctuation">;</span>                                 <span class="token comment" spellcheck="true">// [1, 2, 3, 4]</span>
+</code></pre>
+
+<div class="markup-collapse clearfix"><div><span class="collapse-button"><button class="button secondary tiny" type="button" data-toggle="collapse" data-target="#collapse_7ab2b13c0678" aria-expanded="false" aria-controls="collapseExample">Understanding the Problem</button></span></div><div class="collapse" id="collapse_7ab2b13c0678">
+
+<p>To understand the problem better, let's take a closer look at the expected <strong>input</strong> and <strong>output</strong>.</p>
+
+<ul>
+<li>
+<strong>Input</strong>
+
+<ul>
+<li>an array
+</li>
+</ul>
+</li>
+<li>
+<strong>Output</strong>
+
+<ul>
+<li>a new array, since we can't mutate the original array
+</li>
+</ul>
+</li>
+<li>
+<strong>Rules</strong>
+
+<ul>
+<li>if the input is not an array, return <code>undefined</code>
+</li>
+<li>if the input is an empty array, return <code>[]</code>
+</li>
+<li>for a non-empty array, slice off the first element and append it to the end of the array
+</li>
+</ul>
+</li>
+</ul>
+
+</div></div>
+
+</div>
+</article>
+<article id="exercise_analysis">
+<div class="tealeaf-markup">
+<div class="markup-collapse clearfix open">
+<div>
+<span class="collapse-button">
+<button aria-controls="collapseExample" aria-expanded="false" class="button small" data-target="#solution-analysis-collapse" data-toggle="collapse" type="button">Hide Solution &amp; Discussion</button>
+</span>
+</div>
+<div class="collapse" id="solution-analysis-collapse" style="display: block;">
+<div class="tealeaf-markup"><h4>Solution</h4>
+
+<p>The way we have broken down the problem easily leads us to the solution:</p>
+
+<pre class=" language-javascript" data-numbers="off"><code class=" language-javascript"><span class="token keyword">function</span> <span class="token function">rotateArray</span><span class="token punctuation">(</span>array<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>array<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>array<span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> array<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span>array<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+</article>
+<section class="gray-links" id="actions">
+<span><form action="https://launchschool.com/exercises/3d03ea77/watch" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓">
+<button name="button" type="submit" class="button link"><i class="fa fa-eye" title="Watchers are notified when new solutions are added"></i>
+Watch
+</button></form>
+
+</span>
+<span class="gray-text" title="You haven&#39;t completed this exercise yet">
+<nobr>
+<form class="new_exercise_submission" id="new_exercise_submission" action="https://launchschool.com/exercises/3d03ea77/submissions" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="ziwpK1EzzSIbNs/Ehe54Y/ZsIIq5MV9XAJefhViuFrww29/BncUQejoeNuHptt5lg1Vlu0XjJr8Mv8fLviVwbw=="><button name="button" type="submit" class="button link" data-disable-with="Saving..."><i class="fa fa-check"></i>
+Mark this exercise as complete
+</button></form></nobr>
+</span>
+<span title="Next exercise: Rotation Part 2">
+<nobr>
+<a href="https://launchschool.com/exercises/1aa322c0"><i class="fa fa-arrow-right"></i>
+Go to the next exercise
+</a></nobr>
+</span>
+</section>
+
+<div id="discussion-thread">
+<div class="respond">
+<div class="editor-with-markdown-preview">
+<div class="header">
+Add your unique solution below
+<label for="exercise_solution_text">
+<p class="help-block small-bottom-margin">
+<small>
+We want to invite you to contribute your unique solution or analysis. The goal here is to showcase the variety of ways in which this exercise can be solved, and the various tradeoffs one has to consider when working to a solution. Please do not submit redundant solutions, or solutions you haven't tested, or solutions that contain errors. <strong>It's not mandatory that you submit a solution.</strong> If you do, make sure it's a somewhat good solution that may be useful to others who are learning.
+</small>
+</p>
+<p class="help-block small-bottom-margin">
+<small>
+Use the form below to add your solution or analysis for this exercise. You can include a link to a gist or pastebin, or write your entire solution right here. Make sure to use proper formatting so your code shows up correctly and preview your code first. You may include some commentary about your code and the tradeoffs you took, or some analysis about this exercise and its solutions. Make sure your solution fulfills all of the provided examples, if any, and doesn't contain any obvious errors.
+</small>
+</p>
+<p class="help-block small-bottom-margin">
+<small>
+Don't use the form below to ask questions or make suggestions about the exercise. If you have a question, ask in our <a href="https://launchschool.com/forum">Community Forums</a>. If you found an error or have a suggestion, use the Feedback form on the right side of this page.
+</small>
+</p>
+</label>
+</div>
+<form class="new_exercise_solution" id="new_exercise_solution" action="https://launchschool.com/exercises/3d03ea77/solutions" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓"><textarea placeholder="Add your solution or analysis" name="exercise_solution[text]" id="exercise_solution_text"></textarea>
+<input type="checkbox" name="exercise[watch]" id="exercise_watch" value="1" class="ls-checkbox"><label for="exercise_watch">Notify me of future submissions</label>
+<a class="formatting-help orange-link" data-reveal-id="formatting-help-modal" href="https://launchschool.com/exercises/3d03ea77#">Formatting Help</a>
+<a class="button small preview secondary round" href="https://launchschool.com/exercises/3d03ea77">Preview</a>
+<input type="submit" name="commit" value="Submit" data-disable-with="Please Wait.." class="button primary round small solution-submit">
+</form><div class="markdown-preview hide">
+<div class="preview-header"></div>
+<div class="preview-content"></div>
+<a class="button small secondary round write" href="https://launchschool.com/exercises/3d03ea77">Edit</a>
+<button class="preview-submit button small round primary">Submit</button>
+</div>
+
+</div>
+</div>
+
+<div class="tealeaf-markup major-section">
+<div class="markup-collapse clearfix">
+<div>
+<span class="collapse-button">
+<button aria-controls="discussion-thread" aria-expanded="false" class="button small" data-target="#user-submitted-solutions-collapse" data-toggle="collapse" type="button">Show user submitted solutions</button>
+</span>
+</div>
+<div class="collapse" id="user-submitted-solutions-collapse">
+<div class="discussion-solutions">
+<div class="discussion-solution" data-id="14439">
+<a name="solution-6f96ec46"></a>
+<div class="avatar">
+<a href="https://launchschool.com/users/40c988b3"><img class="round" height="40" width="40" src="./Launch School - an online school for Software Engineers_files/16280491" alt="16280491?s=40">
+</a></div>
+<div class="author" data-user-handle="PeteHanson" data-user-name="Pete Hanson">
+<a href="https://launchschool.com/users/40c988b3">Pete Hanson</a>
+</div>
+<div class="posted-at"><time class="timeago" datetime="2018-03-27T22:15:49Z" title="March 27, 2018 at 6:15pm EDT">about a year ago</time></div>
+<div class="content">
+<div class="tealeaf-markup"><p>[Uses ES6]</p>
+<pre class="language-javascript line-numbers"><code class=" language-javascript"><span class="token keyword">function</span> <span class="token function">rotateArray</span><span class="token punctuation">(</span>ary<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>ary<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> newAry <span class="token operator">=</span> ary<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>ary<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      newAry<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>ary<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> newAry<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> undefined<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+</div>
+<div class="editor-with-markdown-preview hide" data-purpose="edit">
+<div class="header">
+Edit Submission
+</div>
+<form class="caret edit_solution" id="edit_exercise_solution_14439" action="https://launchschool.com/exercises/3d03ea77/solutions/14439" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method" value="patch"><textarea id="edit_solution_14439_text" placeholder="Submit your solution and insights" name="exercise_solution[text]">[Uses ES6]
+
+```javascript
+function rotateArray(ary) {
+  if (Array.isArray(ary)) {
+    const newAry = ary.slice(1);
+    if (ary.length &gt; 0) {
+      newAry.push(ary[0]);
+    }
+
+    return newAry;
+  }
+
+  return undefined;
+}
+```</textarea>
+<input type="checkbox" name="exercise_solution[notify_watchers]" id="exercise_solution_notify_watchers_14439" value="1" class="ls-checkbox"><label for="exercise_solution_notify_watchers_14439">Notify users who are watching this exercise
+<p class="help-block no-bottom-margin">
+<small>
+Keep others updated by checking this box when making substantial changes. Don't check when making small grammatical fixes.
+</small>
+</p>
+</label><a class="formatting-help orange-link" data-reveal-id="formatting-help-modal" href="https://launchschool.com/exercises/3d03ea77#">Formatting Help</a>
+<a class="button small preview secondary round" href="https://launchschool.com/exercises/3d03ea77">Preview</a>
+<input type="submit" name="commit" value="Update" class="button primary round small solution-submit" data-disable-with="Please Wait..">
+<a class="cancel" href="https://launchschool.com/exercises/3d03ea77">Cancel</a>
+</form><div class="markdown-preview hide">
+<div class="preview-header"></div>
+<div class="preview-content"></div>
+<a class="button small secondary round write" href="https://launchschool.com/exercises/3d03ea77">Edit</a>
+<button class="preview-submit button small round primary">Update</button>
+</div>
+
+</div>
+<div class="actions">
+<form action="https://launchschool.com/exercises/3d03ea77/solutions/14439/like" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓">
+<input type="submit" name="commit" value="0 Likes" class="like" data-disable-with="0 Likes">
+</form>
+
+<a class="comment-on-exercise-solution" href="https://launchschool.com/exercises/3d03ea77">Comment</a>
+</div>
+<div class="solution-comment-form">
+<div class="editor-with-markdown-preview hide" data-purpose="comment">
+<div class="header">
+Create Comment
+</div>
+<form class="caret comment_on_solution" id="new_exercise_solution_comment" action="https://launchschool.com/exercises/3d03ea77/solutions/14439/comments" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓"><textarea id="solution_14439_new_comment_text" placeholder="Comment on this solution" name="exercise_solution_comment[text]"></textarea>
+<a class="formatting-help orange-link" data-reveal-id="formatting-help-modal" href="https://launchschool.com/exercises/3d03ea77#">Formatting Help</a>
+<a class="button small preview" href="https://launchschool.com/exercises/3d03ea77">Preview</a>
+<input type="submit" name="commit" value="Post" class="button primary round small solution-submit" data-disable-with="Please Wait..">
+<a class="cancel" href="https://launchschool.com/exercises/3d03ea77">Cancel</a>
+</form><div class="markdown-preview hide">
+<div class="preview-header"></div>
+<div class="preview-content"></div>
+<a class="button small secondary round write" href="https://launchschool.com/exercises/3d03ea77">Edit</a>
+<button class="preview-submit button small round primary">Post</button>
+</div>
+
+</div>
+</div>
+<div class="solution-comments">
+
+</div>
+</div>
+<div class="discussion-solution" data-id="13886">
+<a name="solution-d03a2250"></a>
+<div class="avatar">
+<a href="https://launchschool.com/users/b6bdf714"><img class="round" height="40" width="40" src="./Launch School - an online school for Software Engineers_files/14363754" alt="14363754?s=40">
+</a></div>
+<div class="author" data-user-handle="DembaSiby" data-user-name="Demba Siby">
+<a href="https://launchschool.com/users/b6bdf714">Demba Siby</a>
+</div>
+<div class="posted-at"><time class="timeago" datetime="2018-01-27T22:29:28Z" title="January 27, 2018 at 5:29pm EST">about a year ago</time></div>
+<div class="content">
+<div class="tealeaf-markup"><pre class="language-javascript line-numbers"><code class=" language-javascript"><span class="token keyword">function</span> <span class="token function">rotateArray</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> newArr <span class="token operator">=</span> arr<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> undefined<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>arr<span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+  newArr<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>newArr<span class="token punctuation">.</span><span class="token function">shift</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> newArr<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+</div>
+<div class="editor-with-markdown-preview hide" data-purpose="edit">
+<div class="header">
+Edit Submission
+</div>
+<form class="caret edit_solution" id="edit_exercise_solution_13886" action="https://launchschool.com/exercises/3d03ea77/solutions/13886" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method" value="patch"><textarea id="edit_solution_13886_text" placeholder="Submit your solution and insights" name="exercise_solution[text]">~~~javascript
+function rotateArray(arr) {
+  var newArr = arr.slice();
+
+  if (!Array.isArray(arr)) { return undefined; }
+  if (arr.length === 0) { return []; }
+  newArr.push(newArr.shift());
+
+  return newArr;
+}
+~~~</textarea>
+<input type="checkbox" name="exercise_solution[notify_watchers]" id="exercise_solution_notify_watchers_13886" value="1" class="ls-checkbox"><label for="exercise_solution_notify_watchers_13886">Notify users who are watching this exercise
+<p class="help-block no-bottom-margin">
+<small>
+Keep others updated by checking this box when making substantial changes. Don't check when making small grammatical fixes.
+</small>
+</p>
+</label><a class="formatting-help orange-link" data-reveal-id="formatting-help-modal" href="https://launchschool.com/exercises/3d03ea77#">Formatting Help</a>
+<a class="button small preview secondary round" href="https://launchschool.com/exercises/3d03ea77">Preview</a>
+<input type="submit" name="commit" value="Update" class="button primary round small solution-submit" data-disable-with="Please Wait..">
+<a class="cancel" href="https://launchschool.com/exercises/3d03ea77">Cancel</a>
+</form><div class="markdown-preview hide">
+<div class="preview-header"></div>
+<div class="preview-content"></div>
+<a class="button small secondary round write" href="https://launchschool.com/exercises/3d03ea77">Edit</a>
+<button class="preview-submit button small round primary">Update</button>
+</div>
+
+</div>
+<div class="actions">
+<form action="https://launchschool.com/exercises/3d03ea77/solutions/13886/like" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓">
+<input type="submit" name="commit" value="0 Likes" class="like" data-disable-with="0 Likes">
+</form>
+
+<a class="comment-on-exercise-solution" href="https://launchschool.com/exercises/3d03ea77">Comment</a>
+</div>
+<div class="solution-comment-form">
+<div class="editor-with-markdown-preview hide" data-purpose="comment">
+<div class="header">
+Create Comment
+</div>
+<form class="caret comment_on_solution" id="new_exercise_solution_comment" action="https://launchschool.com/exercises/3d03ea77/solutions/13886/comments" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓"><textarea id="solution_13886_new_comment_text" placeholder="Comment on this solution" name="exercise_solution_comment[text]"></textarea>
+<a class="formatting-help orange-link" data-reveal-id="formatting-help-modal" href="https://launchschool.com/exercises/3d03ea77#">Formatting Help</a>
+<a class="button small preview" href="https://launchschool.com/exercises/3d03ea77">Preview</a>
+<input type="submit" name="commit" value="Post" class="button primary round small solution-submit" data-disable-with="Please Wait..">
+<a class="cancel" href="https://launchschool.com/exercises/3d03ea77">Cancel</a>
+</form><div class="markdown-preview hide">
+<div class="preview-header"></div>
+<div class="preview-content"></div>
+<a class="button small secondary round write" href="https://launchschool.com/exercises/3d03ea77">Edit</a>
+<button class="preview-submit button small round primary">Post</button>
+</div>
+
+</div>
+</div>
+<div class="solution-comments">
+
+</div>
+</div>
+<div class="discussion-solution" data-id="11542">
+<a name="solution-97b677c1"></a>
+<div class="avatar">
+<a href="https://launchschool.com/users/cb41e991"><img class="round" height="40" width="40" src="./Launch School - an online school for Software Engineers_files/4215820" alt="4215820?s=40">
+</a></div>
+<div class="author" data-user-handle="xianfenggao" data-user-name="xianfeng gao">
+<a href="https://launchschool.com/users/cb41e991">xianfeng gao</a>
+</div>
+<div class="posted-at"><time class="timeago" datetime="2017-08-31T03:54:44Z" title="August 30, 2017 at 11:54pm EDT">2 years ago</time></div>
+<div class="content">
+<div class="tealeaf-markup"><pre class=" language-none"><code class=" language-none"> function rotateArray(array) {
+   if (!Array.isArray(array)) {
+     return;
+   }
+
+   if (array.length === 0) {
+     return [];
+   }
+
+   var rotated = array.slice(1);
+   rotated.push(array[0]);
+   return rotated;
+ }
+</code></pre></div>
+</div>
+<div class="editor-with-markdown-preview hide" data-purpose="edit">
+<div class="header">
+Edit Submission
+</div>
+<form class="caret edit_solution" id="edit_exercise_solution_11542" action="https://launchschool.com/exercises/3d03ea77/solutions/11542" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method" value="patch"><textarea id="edit_solution_11542_text" placeholder="Submit your solution and insights" name="exercise_solution[text]">```
+ function rotateArray(array) {
+   if (!Array.isArray(array)) {
+     return;
+   }
+
+   if (array.length === 0) {
+     return [];
+   }
+
+   var rotated = array.slice(1);
+   rotated.push(array[0]);
+   return rotated;
+ }
+```</textarea>
+<input type="checkbox" name="exercise_solution[notify_watchers]" id="exercise_solution_notify_watchers_11542" value="1" class="ls-checkbox"><label for="exercise_solution_notify_watchers_11542">Notify users who are watching this exercise
+<p class="help-block no-bottom-margin">
+<small>
+Keep others updated by checking this box when making substantial changes. Don't check when making small grammatical fixes.
+</small>
+</p>
+</label><a class="formatting-help orange-link" data-reveal-id="formatting-help-modal" href="https://launchschool.com/exercises/3d03ea77#">Formatting Help</a>
+<a class="button small preview secondary round" href="https://launchschool.com/exercises/3d03ea77">Preview</a>
+<input type="submit" name="commit" value="Update" class="button primary round small solution-submit" data-disable-with="Please Wait..">
+<a class="cancel" href="https://launchschool.com/exercises/3d03ea77">Cancel</a>
+</form><div class="markdown-preview hide">
+<div class="preview-header"></div>
+<div class="preview-content"></div>
+<a class="button small secondary round write" href="https://launchschool.com/exercises/3d03ea77">Edit</a>
+<button class="preview-submit button small round primary">Update</button>
+</div>
+
+</div>
+<div class="actions">
+<form action="https://launchschool.com/exercises/3d03ea77/solutions/11542/like" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓">
+<input type="submit" name="commit" value="0 Likes" class="like" data-disable-with="0 Likes">
+</form>
+
+<a class="comment-on-exercise-solution" href="https://launchschool.com/exercises/3d03ea77">Comment</a>
+</div>
+<div class="solution-comment-form">
+<div class="editor-with-markdown-preview hide" data-purpose="comment">
+<div class="header">
+Create Comment
+</div>
+<form class="caret comment_on_solution" id="new_exercise_solution_comment" action="https://launchschool.com/exercises/3d03ea77/solutions/11542/comments" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓"><textarea id="solution_11542_new_comment_text" placeholder="Comment on this solution" name="exercise_solution_comment[text]"></textarea>
+<a class="formatting-help orange-link" data-reveal-id="formatting-help-modal" href="https://launchschool.com/exercises/3d03ea77#">Formatting Help</a>
+<a class="button small preview" href="https://launchschool.com/exercises/3d03ea77">Preview</a>
+<input type="submit" name="commit" value="Post" class="button primary round small solution-submit" data-disable-with="Please Wait..">
+<a class="cancel" href="https://launchschool.com/exercises/3d03ea77">Cancel</a>
+</form><div class="markdown-preview hide">
+<div class="preview-header"></div>
+<div class="preview-content"></div>
+<a class="button small secondary round write" href="https://launchschool.com/exercises/3d03ea77">Edit</a>
+<button class="preview-submit button small round primary">Post</button>
+</div>
+
+</div>
+</div>
+<div class="solution-comments">
+
+</div>
+</div>
+<div class="discussion-solution" data-id="11158">
+<a name="solution-1c6485fc"></a>
+<div class="avatar">
+<a href="https://launchschool.com/users/a3a161e8"><img class="round" height="40" width="40" src="./Launch School - an online school for Software Engineers_files/18152802" alt="18152802?s=40">
+</a></div>
+<div class="author" data-user-handle="NickJohnson" data-user-name="Nick Johnson">
+<a href="https://launchschool.com/users/a3a161e8">Nick Johnson</a>
+</div>
+<div class="posted-at"><time class="timeago" datetime="2017-08-18T13:35:21Z" title="August 18, 2017 at 9:35am EDT">2 years ago</time></div>
+<div class="content">
+<div class="tealeaf-markup"><pre class="language-js line-numbers"><code class=" language-js"><span class="token keyword">const</span> rotateArray <span class="token operator">=</span> <span class="token punctuation">(</span>arr<span class="token punctuation">,</span> nope <span class="token operator">=</span> Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span> <span class="token operator">||</span> undefined<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">(</span>
+  nope <span class="token operator">&amp;&amp;</span> <span class="token punctuation">[</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>arr<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>arr<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div>
+</div>
+<div class="editor-with-markdown-preview hide" data-purpose="edit">
+<div class="header">
+Edit Submission
+</div>
+<form class="caret edit_solution" id="edit_exercise_solution_11158" action="https://launchschool.com/exercises/3d03ea77/solutions/11158" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method" value="patch"><textarea id="edit_solution_11158_text" placeholder="Submit your solution and insights" name="exercise_solution[text]">```js
+const rotateArray = (arr, nope = Array.isArray(arr) || undefined) =&gt; (
+  nope &amp;&amp; [...arr.slice(1), ...arr.slice(0, 1)]
+);
+```</textarea>
+<input type="checkbox" name="exercise_solution[notify_watchers]" id="exercise_solution_notify_watchers_11158" value="1" class="ls-checkbox"><label for="exercise_solution_notify_watchers_11158">Notify users who are watching this exercise
+<p class="help-block no-bottom-margin">
+<small>
+Keep others updated by checking this box when making substantial changes. Don't check when making small grammatical fixes.
+</small>
+</p>
+</label><a class="formatting-help orange-link" data-reveal-id="formatting-help-modal" href="https://launchschool.com/exercises/3d03ea77#">Formatting Help</a>
+<a class="button small preview secondary round" href="https://launchschool.com/exercises/3d03ea77">Preview</a>
+<input type="submit" name="commit" value="Update" class="button primary round small solution-submit" data-disable-with="Please Wait..">
+<a class="cancel" href="https://launchschool.com/exercises/3d03ea77">Cancel</a>
+</form><div class="markdown-preview hide">
+<div class="preview-header"></div>
+<div class="preview-content"></div>
+<a class="button small secondary round write" href="https://launchschool.com/exercises/3d03ea77">Edit</a>
+<button class="preview-submit button small round primary">Update</button>
+</div>
+
+</div>
+<div class="actions">
+<form action="https://launchschool.com/exercises/3d03ea77/solutions/11158/like" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓">
+<input type="submit" name="commit" value="1 Like" class="like" data-disable-with="1 Like">
+</form>
+
+<a class="comment-on-exercise-solution" href="https://launchschool.com/exercises/3d03ea77">Comment</a>
+</div>
+<div class="solution-comment-form">
+<div class="editor-with-markdown-preview hide" data-purpose="comment">
+<div class="header">
+Create Comment
+</div>
+<form class="caret comment_on_solution" id="new_exercise_solution_comment" action="https://launchschool.com/exercises/3d03ea77/solutions/11158/comments" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓"><textarea id="solution_11158_new_comment_text" placeholder="Comment on this solution" name="exercise_solution_comment[text]"></textarea>
+<a class="formatting-help orange-link" data-reveal-id="formatting-help-modal" href="https://launchschool.com/exercises/3d03ea77#">Formatting Help</a>
+<a class="button small preview" href="https://launchschool.com/exercises/3d03ea77">Preview</a>
+<input type="submit" name="commit" value="Post" class="button primary round small solution-submit" data-disable-with="Please Wait..">
+<a class="cancel" href="https://launchschool.com/exercises/3d03ea77">Cancel</a>
+</form><div class="markdown-preview hide">
+<div class="preview-header"></div>
+<div class="preview-content"></div>
+<a class="button small secondary round write" href="https://launchschool.com/exercises/3d03ea77">Edit</a>
+<button class="preview-submit button small round primary">Post</button>
+</div>
+
+</div>
+</div>
+<div class="solution-comments">
+
+</div>
+</div>
+<div class="discussion-solution" data-id="10213">
+<a name="solution-d150f12d"></a>
+<div class="avatar">
+<a href="https://launchschool.com/users/d8dc3c2b"><img class="round" height="40" width="40" src="./Launch School - an online school for Software Engineers_files/10018361" alt="10018361?s=40">
+</a></div>
+<div class="author" data-user-handle="SheldonChi" data-user-name="Sheldon Chi">
+<a href="https://launchschool.com/users/d8dc3c2b">Sheldon Chi</a>
+</div>
+<div class="posted-at"><time class="timeago" datetime="2017-07-05T08:34:02Z" title="July 5, 2017 at 4:34am EDT">2 years ago</time></div>
+<div class="content">
+<div class="tealeaf-markup"><pre class="language-js line-numbers"><code class=" language-js"><span class="token keyword">function</span> <span class="token function">rotateArray</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span> <span class="token operator">?</span> arr<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span>arr<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> undefined<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div>
+</div>
+<div class="editor-with-markdown-preview hide" data-purpose="edit">
+<div class="header">
+Edit Submission
+</div>
+<form class="caret edit_solution" id="edit_exercise_solution_10213" action="https://launchschool.com/exercises/3d03ea77/solutions/10213" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method" value="patch"><textarea id="edit_solution_10213_text" placeholder="Submit your solution and insights" name="exercise_solution[text]">```js
+function rotateArray(arr) {
+  return Array.isArray(arr) ? arr.slice(1,).concat(arr.slice(0,1)) : undefined;
+}
+```</textarea>
+<input type="checkbox" name="exercise_solution[notify_watchers]" id="exercise_solution_notify_watchers_10213" value="1" class="ls-checkbox"><label for="exercise_solution_notify_watchers_10213">Notify users who are watching this exercise
+<p class="help-block no-bottom-margin">
+<small>
+Keep others updated by checking this box when making substantial changes. Don't check when making small grammatical fixes.
+</small>
+</p>
+</label><a class="formatting-help orange-link" data-reveal-id="formatting-help-modal" href="https://launchschool.com/exercises/3d03ea77#">Formatting Help</a>
+<a class="button small preview secondary round" href="https://launchschool.com/exercises/3d03ea77">Preview</a>
+<input type="submit" name="commit" value="Update" class="button primary round small solution-submit" data-disable-with="Please Wait..">
+<a class="cancel" href="https://launchschool.com/exercises/3d03ea77">Cancel</a>
+</form><div class="markdown-preview hide">
+<div class="preview-header"></div>
+<div class="preview-content"></div>
+<a class="button small secondary round write" href="https://launchschool.com/exercises/3d03ea77">Edit</a>
+<button class="preview-submit button small round primary">Update</button>
+</div>
+
+</div>
+<div class="actions">
+<form action="https://launchschool.com/exercises/3d03ea77/solutions/10213/like" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓">
+<input type="submit" name="commit" value="1 Like" class="like" data-disable-with="1 Like">
+</form>
+
+<a class="comment-on-exercise-solution" href="https://launchschool.com/exercises/3d03ea77">Comment</a>
+</div>
+<div class="solution-comment-form">
+<div class="editor-with-markdown-preview hide" data-purpose="comment">
+<div class="header">
+Create Comment
+</div>
+<form class="caret comment_on_solution" id="new_exercise_solution_comment" action="https://launchschool.com/exercises/3d03ea77/solutions/10213/comments" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓"><textarea id="solution_10213_new_comment_text" placeholder="Comment on this solution" name="exercise_solution_comment[text]"></textarea>
+<a class="formatting-help orange-link" data-reveal-id="formatting-help-modal" href="https://launchschool.com/exercises/3d03ea77#">Formatting Help</a>
+<a class="button small preview" href="https://launchschool.com/exercises/3d03ea77">Preview</a>
+<input type="submit" name="commit" value="Post" class="button primary round small solution-submit" data-disable-with="Please Wait..">
+<a class="cancel" href="https://launchschool.com/exercises/3d03ea77">Cancel</a>
+</form><div class="markdown-preview hide">
+<div class="preview-header"></div>
+<div class="preview-content"></div>
+<a class="button small secondary round write" href="https://launchschool.com/exercises/3d03ea77">Edit</a>
+<button class="preview-submit button small round primary">Post</button>
+</div>
+
+</div>
+</div>
+<div class="solution-comments">
+
+</div>
+</div>
+<div class="discussion-solution" data-id="7703">
+<a name="solution-8b658fac"></a>
+<div class="avatar">
+<a href="https://launchschool.com/users/ecd149d0"><img class="round" height="40" width="40" src="./Launch School - an online school for Software Engineers_files/11488245" alt="11488245?s=40">
+</a></div>
+<div class="author" data-user-handle="WalterWang" data-user-name="Walter Wang">
+<a href="https://launchschool.com/users/ecd149d0">Walter Wang</a>
+</div>
+<div class="posted-at"><time class="timeago" datetime="2017-03-01T14:20:00Z" title="March 1, 2017 at 9:20am EST">2 years ago</time></div>
+<div class="content">
+<div class="tealeaf-markup"><pre class="language-javascript line-numbers"><code class=" language-javascript"><span class="token keyword">function</span> <span class="token function">rotateArray</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>arr <span class="token operator">||</span> <span class="token operator">!</span>Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> undefined<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">var</span> length <span class="token operator">=</span> arr<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+  <span class="token keyword">var</span> nextIndex<span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> arr<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>ele<span class="token punctuation">,</span> index<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    nextIndex <span class="token operator">=</span> <span class="token punctuation">(</span>index <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">%</span> length<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> arr<span class="token punctuation">[</span>nextIndex<span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+</div>
+<div class="editor-with-markdown-preview hide" data-purpose="edit">
+<div class="header">
+Edit Submission
+</div>
+<form class="caret edit_solution" id="edit_exercise_solution_7703" action="https://launchschool.com/exercises/3d03ea77/solutions/7703" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method" value="patch"><textarea id="edit_solution_7703_text" placeholder="Submit your solution and insights" name="exercise_solution[text]">```javascript
+function rotateArray(arr) {
+  if (!arr || !Array.isArray(arr)) {
+    return undefined;
+  }
+
+  var length = arr.length;
+  var nextIndex;
+
+  return arr.map(function(ele, index) {
+    nextIndex = (index + 1) % length;
+    return arr[nextIndex]
+  });
+}
+```</textarea>
+<input type="checkbox" name="exercise_solution[notify_watchers]" id="exercise_solution_notify_watchers_7703" value="1" class="ls-checkbox"><label for="exercise_solution_notify_watchers_7703">Notify users who are watching this exercise
+<p class="help-block no-bottom-margin">
+<small>
+Keep others updated by checking this box when making substantial changes. Don't check when making small grammatical fixes.
+</small>
+</p>
+</label><a class="formatting-help orange-link" data-reveal-id="formatting-help-modal" href="https://launchschool.com/exercises/3d03ea77#">Formatting Help</a>
+<a class="button small preview secondary round" href="https://launchschool.com/exercises/3d03ea77">Preview</a>
+<input type="submit" name="commit" value="Update" class="button primary round small solution-submit" data-disable-with="Please Wait..">
+<a class="cancel" href="https://launchschool.com/exercises/3d03ea77">Cancel</a>
+</form><div class="markdown-preview hide">
+<div class="preview-header"></div>
+<div class="preview-content"></div>
+<a class="button small secondary round write" href="https://launchschool.com/exercises/3d03ea77">Edit</a>
+<button class="preview-submit button small round primary">Update</button>
+</div>
+
+</div>
+<div class="actions">
+<form action="https://launchschool.com/exercises/3d03ea77/solutions/7703/like" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓">
+<input type="submit" name="commit" value="3 Likes" class="like" data-disable-with="3 Likes">
+</form>
+
+<a class="comment-on-exercise-solution" href="https://launchschool.com/exercises/3d03ea77">Comment</a>
+</div>
+<div class="solution-comment-form">
+<div class="editor-with-markdown-preview hide" data-purpose="comment">
+<div class="header">
+Create Comment
+</div>
+<form class="caret comment_on_solution" id="new_exercise_solution_comment" action="https://launchschool.com/exercises/3d03ea77/solutions/7703/comments" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓"><textarea id="solution_7703_new_comment_text" placeholder="Comment on this solution" name="exercise_solution_comment[text]"></textarea>
+<a class="formatting-help orange-link" data-reveal-id="formatting-help-modal" href="https://launchschool.com/exercises/3d03ea77#">Formatting Help</a>
+<a class="button small preview" href="https://launchschool.com/exercises/3d03ea77">Preview</a>
+<input type="submit" name="commit" value="Post" class="button primary round small solution-submit" data-disable-with="Please Wait..">
+<a class="cancel" href="https://launchschool.com/exercises/3d03ea77">Cancel</a>
+</form><div class="markdown-preview hide">
+<div class="preview-header"></div>
+<div class="preview-content"></div>
+<a class="button small secondary round write" href="https://launchschool.com/exercises/3d03ea77">Edit</a>
+<button class="preview-submit button small round primary">Post</button>
+</div>
+
+</div>
+</div>
+<div class="solution-comments">
+
+</div>
+</div>
+
+</div>
+<br>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+<div class="right" style="position: relative">
+<a class="hide" href="https://launchschool.com/exercises/3d03ea77#top" id="to-top-link" title="Go to top." style="display: inline;">
+<div class="fa fa-angle-double-up fa-3x show-for-medium-up"></div>
+<div class="fa fa-angle-double-up fa-2x show-for-small-only"></div>
+</a>
+</div>
+</div>
+<script type="text/javascript">
+<!-- * <![CDATA[ */ -->
+var google_conversion_id = 1017054330;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+<!-- * ]]> */ -->
+</script>
+<script type="text/javascript" src="./Launch School - an online school for Software Engineers_files/f.txt">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1017054330/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<!-- END - Google Code for Remarketing Tag -->
+
+<div aria-hidden="true" aria-labelledby="modal-title" class="orange-links reveal-modal" data-reveal="" id="formatting-help-modal" role="dialog">
+<h2 class="modal-title">Formatting Help</h2>
+<div class="tealeaf-markup"><h3>Normal Markdown &amp; GFM</h3>
+
+<p><a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/" target="\_blank">Github Flavored Markdown</a></p>
+
+<hr>
+
+<p>**<strong>bold</strong>**</p>
+
+<hr>
+
+<p>~~<del>strike through</del>~~</p>
+
+<hr>
+
+<p>`<code>single line of code</code>`</p>
+
+<hr>
+
+<p>Supports
+<a href="http://www.emoji-cheat-sheet.com/" target="\_blank">Emoji</a></p>
+
+<h3>Code Blocks</h3>
+
+<p>You can write code blocks using three backticks (```) followed by the language you want to show.
+For instance, if you wanted to write a Ruby code block you would write:</p>
+
+<pre class=" language-none" data-numbers="off"><code class=" language-none">```ruby
+class Foo
+end
+```
+</code></pre>
+
+<hr>
+
+<pre class="language-ruby line-numbers"><code class=" language-ruby"><span class="token keyword">class</span> <span class="token class-name">Foo</span>
+<span class="token keyword">end</span>
+<span class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>You can also leave out the language identifier, doing this will make it so your code isn't highlighted at all, and all text will be white with no coloring.</p>
+
+<pre class=" language-none" data-numbers="off"><code class=" language-none">```
+class Bar
+end
+```
+</code></pre>
+
+<hr>
+
+<pre class=" language-none"><code class=" language-none">class Bar
+end
+</code></pre>
+
+<h4>Highlighting</h4>
+
+<p>You may highlight lines within your code blocks. This is a different type of highlighting, and isn't related to how the code within your code block may be colored depending on the language identifier used.<br>
+To highlight one or more lines of code, add <code># highlight</code> on a separate line just before the first line you wish to highlight. To end highlighting, add <code># endhighlight</code> on a separate line immediately after the last line you wish to highlight.</p>
+
+<pre class=" language-none" data-numbers="off"><code class=" language-none">```ruby
+def say_hello_world
+# highlight
+  puts 'Hello World!!!'
+# endhighlight
+end
+```
+</code></pre>
+
+<hr>
+
+<pre class="language-ruby line-numbers"><code class=" language-ruby"><span class="token keyword">def</span> say_hello_world
+  puts <span class="token string">'Hello World!!!'</span>
+<span class="token keyword">end</span>
+<span class="line-numbers-rows"><span></span><span></span><span></span></span></code><div class="prism-highlight highlight" style="top: 25px; height: 24px;"></div></pre>
+</div>
+<a aria-label="Close" class="close-reveal-modal">×</a>
+</div>
+
+
+
+<div id="lightbox" class="hidden"><img><i class="fa fa-close close-lightbox"></i></div></body></html>
